@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+<header class="page-header">
+  <a class="page-header__logo" href="#">
+    <img class="page-header__logo-image" src="img/mishka-logo.svg" width="88" height="44" alt="Мишка">
+  </a>
+  <nav class="main-nav">
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item">
+        <a href="index.html">Каталог товаров</a>
+      </li>
+      <li class="site-list__item">
+        <a href="photo.html">Вязание на заказ</a>
+      </li>
+      <li class="site-list__item">
+        <a href="form.html">Поиск по сайту</a>
+      </li>
+      <li class="site-list__item">
+        <a href="#">Корзина: пока пуста</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="form-content">
+  <div class="form-content__container">
+    <div class="page-header">
+       <h1 class="page-header__header"> Каталог товаров </h1>
+    </div>
+    <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="order-form__text-content">
+        <p class="order-form__text"> Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали. </p>
+      </div>
+      <fieldset class="order-form__fieldset order-form__fieldset--type">
+        <legend class="order-form__legend"> Тип </legend>
+        <p class="order-form__radio-content">
+          <input class="order-form__radio" type="radio" id="accessory" name="radio" checked>
+          <label class="order-form__label order-form__label--radio" for="accessory"> Аксессуар для интерьера </label>
+        </p>
+        <p class="order-form__radio-content">
+          <input class="order-form__radio" type="radio" id="toy" name="radio">
+          <label class="order-form__label order-form__label--radio" for="toy"> Детская игрушка </label>
+        </p>
+      </fieldset>
+      <fieldset class="order-form__fieldset  order-form__fieldset--color">
+        <legend class="order-form__legend"> Цвет </legend>
+        <p class="order-form__input-content">
+          <input class="order-form__input-color" type="checkbox" name="white" id="white">
+          <label class="order-form__label-color" for="white"> Белый </label>
+        </p>
+        <p class="order-form__input-content">
+          <input class="order-form__input-color" type="checkbox" name="gray" id="gray">
+          <label class="order-form__label-color" for="gray"> Серый </label>
+        </p>
+        <p class="order-form__input-content">
+          <input class="order-form__input-color" type="checkbox" name="tiffany" id="tiffany">
+          <label class="order-form__label-color" for="tiffany"> «Тиффани» </label>
+        </p>
+        <p class="order-form__input-content">
+          <input class="order-form__input-color" type="checkbox" name="black" id="black">
+          <label class="order-form__label-color" for="black"> Черный </label>
+        </p>
+        <p class="order-form__input-content">
+          <input class="order-form__input-color" type="checkbox" name="pink" id="pink">
+          <label class="order-form__label-color" for="pink"> Розовый </label>
+        </p>
+        <p class="order-form__input-content">
+          <input class="order-form__input-color" type="checkbox" name="orange" id="orange">
+          <label class="order-form__label-color" for="orange"> Оранжевый </label>
+        </p>
+      </fieldset>
+      <fieldset class="order-form__fieldset order-form__fieldset--name">
+        <legend class="order-form__legend"> ФИО </legend>
+        <p class="order-form__input-name-content">
+          <label class="order-form__label-name" for="name"> Имя: </label>
+          <input class="order-form__input-name" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+        </p>
+        <p class="order-form__input-name-content">
+          <label class="order-form__label-name" for="surname"> Фамилия: </label>
+          <input class="order-form__input-name" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
+        </p>
+        <p class="order-form__input-name-content">
+          <label class="order-form__label-name" for="patronymic"> Отчество: </label>
+          <input class="order-form__input-name" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+        </p>
+      </fieldset>
+      <fieldset class="order-form__fieldset order-form__fieldset--phone">
+        <legend class="order-form__legend"> Тел </legend>
+       <p class="order-form__input-phone-content">
+        <label class="order-form__label-name" for="phone">  </label>
+        <input class="order-form__input-phone" type="text" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ*">
+      </p>
+      </fieldset>
+      <fieldset class="order-form__fieldset order-form__fieldset--email">
+        <legend class="order-form__legend"> E-mail </legend>
+       <p class="order-form__input-email-content">
+        <label class="order-form__label-name" for="email">  </label>
+        <input class="order-form__input-phone" type="text" name="email" id="email" placeholder="Ваш Email*">
+      </p>
+      </fieldset>
+      <fieldset class="order-form__fieldset order-form__fieldset--additional">
+        <legend class="order-form__legend"> Доп </legend>
+        <textarea class="order-form__textarea" name="text" placeholder="Опишите все ваши пожелания к заказу"> </textarea>
+        <span class="order-form__span"> *Поля обязательные для заполнения </span>
+        <button class="button button--send-order" type="submit"> Отправить заказ </button>
+      </fieldset>
+    </form>
+  </div>
+</main>
+<footer class="main-footer">
+  <div class="main-footer__social">
+    <a class="main-footer__instagram" href="#"> <img src="img/insta.svg" width="24" height="21" alt="instagram"> </a>
+    <a class="main-footer__facebook" href="#"> <img src="img/fb.svg" width="24" heigth="32" alt="facebook"> </a>
+    <a class="main-footer__twitter" href="#"> <img src="img/twitter.svg" width="24" height="21" alt="twitter"> </a>
+  </div>
+  <div class="main-footer__developed-by-container">
+    <p class="main-footer__developed-by"> Разработано </p>
+    <a class="main-footer__htmlacademy" href="#"> <img src="img/html.svg" width="28" height="35" alt="htmlacademy"> </a>
+  </div>
+</footer>
