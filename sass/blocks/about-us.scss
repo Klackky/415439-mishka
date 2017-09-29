@@ -1,0 +1,82 @@
+@mixin header {
+  font-size:25px;
+  line-height:30px;
+  font-weight:bold;
+}
+$padding-top-for-items:35px;
+$padding-bottom-for-items:15px;
+
+.about-us__wrapper{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 34px;
+}
+
+.about-us__header{
+  @include header;
+}
+
+.about-us__item{
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: left;
+  list-style: none;
+}
+
+.about-us__list{
+  padding-left:0px;
+}
+
+.about-us__item--material{
+  &::before{
+    content:url(../img/icon-feature-flower.svg);
+    display: block;
+    padding-bottom:$padding-bottom-for-items;
+  }
+}
+
+.about-us__item--style{
+  &::before{
+    content:url(../img/icon-feature-money.svg);
+    display: block;
+    padding-top: $padding-top-for-items;
+    padding-bottom:$padding-bottom-for-items;
+  }
+}
+
+.about-us__item--likes{
+  &::before{
+    content:url(../img/icon-feature-heart.svg);
+    display: block;
+    padding-top: $padding-top-for-items;
+    padding-bottom:$padding-bottom-for-items;
+  }
+}
+
+.about-us__item--handmade{
+  &::before{
+    content:url(../img/icon-feature-ball.svg);
+    display: block;
+    padding-top: $padding-top-for-items;
+    padding-bottom:$padding-bottom-for-items;
+  }
+}
+
+.about-us__item--producer{
+  &::before{
+    content:url(../img/icon-feature-rocket.svg);
+    display: block;
+    padding-top: $padding-top-for-items;
+    padding-bottom:$padding-bottom-for-items;
+  }
+}
+
+.about-us__item--giftwrap{
+  &::before{
+    content:url(../img/icon-feature-gift.svg);
+    display: block;
+    padding-top: $padding-top-for-items;
+    padding-bottom:$padding-bottom-for-items;
+  }
+}
