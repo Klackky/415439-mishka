@@ -1,107 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
-<header class="page-header">
-  <a class="page-header__logo" href="#">
-    <img class="page-header__logo-image" src="img/mishka-logo.svg" width="88" height="44" alt="Мишка">
-  </a>
-  <nav class="main-nav">
-    <ul class="main-nav__list site-list">
-      <li class="site-list__item">
-        <a href="index.html">Каталог товаров</a>
-      </li>
-      <li class="site-list__item">
-        <a href="photo.html">Вязание на заказ</a>
-      </li>
-      <li class="site-list__item">
-        <a href="form.html">Поиск по сайту</a>
-      </li>
-      <li class="site-list__item">
-        <a href="#">Корзина: пока пуста</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-<main class="catalog-content">
-  <div class="catalog-content__container">
-     <div class="page-header">
-        <h1 class="page-header__header"> Каталог товаров </h1>
-     </div>
-  <div class="items-container">
-    <section class="item">
-      <a class="item_image" href="#"> <img src="http://placehold.it/260x190" alt="rabbit"> </a>
-      <div class="item__description">
-        <a class="item__header" href="#"> Зайчик-попрыгайчик </a>
-        <p class="item__dimensions"> Рост 30 см, вес 200 г </p>
-      </div>
-      <div class="item__price-content">
-        <p class="item__price"> 1 200 руб. </p>
-      </div>
-      <div class="popup__sizes">
-         <a class="popup__size--small" href="#"> S </a>
-         <a class="popup__size--medium" href="#"> M </a>
-         <a class="popup__size--large" href="#"> L </a>
-      </div>
-      <a class="button button--add" href="#"> Добавить </a>
-    </div>
-    </section>
-    <section class="item">
-      <a class="item_image" href="#"> <img src="http://placehold.it/260x190" alt="knitted bin"> </a>
-      <div class="item__description">
-        <a class="item__header" href="#"> Корзинка для белья </a>
-        <p class="item__dimensions"> Диаметр 15 см, высота 10 см </p>
-      </div>
-      <div class="item__price-content">
-        <p class="item__price"> 690 руб. </p>
-      </div>
-      <div class="popup__sizes">
-         <a class="popup__size--small" href="#"> S </a>
-         <a class="popup__size--medium" href="#"> M </a>
-         <a class="popup__size--large" href="#"> L </a>
-      </div>
-      <a class="button button--add" href="#"> Добавить </a>
-    </div>
-    </section>
-    <section class="item">
-      <a class="item_image" href="#"> <img src="http://placehold.it/260x190" alt="large basket for toys"> </a>
-      <div class="item__description">
-        <a class="item__header" href="#"> Большая корзинка для игрушек </a>
-        <p class="item__dimensions"> Диаметр 30 см, высота 30 см </p>
-      </div>
-      <div class="item__price-content">
-        <p class="item__price"> 1 500 руб. </p>
-      <div class="popup__sizes">
-           <a class="popup__size--small" href="#"> S </a>
-           <a class="popup__size--medium" href="#"> M </a>
-           <a class="popup__size--large" href="#"> L </a>
+    <head>
+      <meta charset="utf-8">
+      <title>HTML Academy: Мишка</title>
+      <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+      <header class="page-header">
+        <a class="logo" href="#">
+        <img class="logo__img" src="img/mishka-logo.svg" width="88" height="44" alt="Мишка">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__button" type="button"> Меню </button>
+          <div class="main-nav__dropdown">
+            <a class="main-nav__item" href="#"> Каталог товаров </a>
+            <a class="main-nav__item" href="#"> Вязание на заказ </a>
+            <form class="main-nav__form">
+                <input class="main-nav__form-input" type="search" id="search-head" name="search" placeholder="Поиск по сайту">
+                <label class="main-nav__form-label" for="search-head"> Поиск </label>
+            </form>
+            <a class="main-nav__item" href="#"> Корзина: пока пуста </a>
+          </div>
+        </nav>
+          <h1 class="page-header__header"> Каталог товаров </h1>
+      </header>
+      <main class="catalog-content">
+        <div class="page-content__wrapper">
+          <section class="items-container">
+            <article class="item">
+                <a class="item__image" href="#"> <img src="img/photo-hare-mobile@1x.jpg" width="260" height-"195" alt="rabbit"> </a>
+                <div class="item__description">
+                  <a class="item__header" href="#"> Зайчик-попрыгайчик </a>
+                  <p class="item__dimensions"> Рост 30 см, вес 200 г </p>
+                </div>
+                <div class="item__price-content">
+                  <p class="item__price"> 1 200 руб. </p>
+                </div>
+            </article>
+            <article class="item">
+                <a class="item__image" href="#"> <img src="img/photo-bowl-mobile@1x.jpg" width="260" height-"195" alt="knitted bin"> </a>
+                <div class="item__description">
+                  <a class="item__header" href="#"> Корзинка для белья </a>
+                  <p class="item__dimensions"> Диаметр 15 см, высота 10 см </p>
+                </div>
+                <div class="item__price-content">
+                  <p class="item__price"> 690 руб. </p>
+                </div>
+            </article>
+            <article class="item">
+                <a class="item__image" href="#"> <img src="img/photo-toys-mobile@1x.jpg" width="260" height-"195" alt="large basket for toys"> </a>
+                <div class="item__description">
+                  <a class="item__header" href="#"> Большая корзинка для игрушек </a>
+                  <p class="item__dimensions"> Диаметр 30 см, высота 30 см </p>
+                </div>
+                <div class="item__price-content">
+                  <p class="item__price"> 1 500 руб. </p>
+                </div>
+            </article>
+            <section class="item__process">
+                <h2 class="item__header item__header--process"> Процесс производства </h2>
+                <div class="item__video">
+                  <a class="item__image" href="#"> <img src="img/video-mobile@1x.jpg" width="260" height-"195" alt="bin"> </a>
+                </div>
+                <p class="item__process-text"> По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары. </p>
+                <a class="button button--make-order" href="#"> Сделать заказ </a>
+            </section>
+          </section>
         </div>
-        <a class="button button--add" href="#"> Добавить </a>
+      </main>
+      <footer class="main-footer">
+          <div class="social">
+            <a class="social__link" href="#"> <img src="img/icon-insta.svg" width="24" height="21" alt="instagram"> </a>
+            <a class="social__link" href="#"> <img src="img/icon-fb.svg" width="24" height="32" alt="facebook"> </a>
+            <a class="social__link" href="#"> <img src="img/icon-twitter.svg" width="24" height="21" alt="twitter"> </a>
+          </div>
+          <div class="main-footer__developed-by-container">
+            <p class="main-footer__developed-by"> Разработано </p>
+            <a class="main-footer__htmlacademy" href="#"> <img src="img/htmlacademy.svg" width="38" height="45" alt="htmlacademy"> </a>
+          </div>
+      </footer>
+      <div class="popup popup--closed">
+        <div class="popup__wrapper">
+          <h2 class="popup__header"> Добавить в корзину </h2>
+          <span class="popup__pick-size"> Выберите размер: </span>
+          <form class="popup__sizes">
+            <p class="popup__content">
+              <input class="popup__checkbox" type="checkbox" name="small" id="small" checked>
+              <label class="popup__label popup__label--small" for="small"> S </label>
+            </p>
+            <p class="popup__content">
+              <input class="popup__checkbox" type="checkbox" name="medium" id="medium">
+              <label class="popup__label" for="medium"> M </label>
+            </p>
+            <p class="popup__content">
+              <input class="popup__checkbox" type="checkbox" name="large" id="large">
+              <label class="popup__label" for="large"> L </label>
+            </p>
+          </form>
+          <a class="button button--add" href="#"> Добавить </a>
+        </div>
       </div>
-      </div>
-    </section>
-    <section class="production-process">
-      <h2 class="production-process__header"> Процесс производства </h2>
-      <div class="video">
-        <a class="item_image" href="#"> <img src="http://placehold.it/260x190" alt="bin"> </a>
-      </div>
-      <p class="production-process__text"> По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары. </p>
-      <a class="button button--make-order" href="#"> Сделать заказ </a>
-    </section>
-  </div>
-  </div>
-</main>
-<footer class="main-footer">
-  <div class="main-footer__social">
-    <a class="main-footer__instagram" href="#"> <img src="img/insta.svg" width="24" height="21" alt="instagram"> </a>
-    <a class="main-footer__facebook" href="#"> <img src="img/fb.svg" width="24" heigth="32" alt="facebook"> </a>
-    <a class="main-footer__twitter" href="#"> <img src="img/twitter.svg" width="24" height="21" alt="twitter"> </a>
-  </div>
-  <div class="main-footer__developed-by-container">
-    <p class="main-footer__developed-by"> Разработано </p>
-    <a class="main-footer__htmlacademy" href="#"> <img src="img/html.svg" width="28" height="35" alt="htmlacademy"> </a>
-  </div>
-</footer>
+    </body>

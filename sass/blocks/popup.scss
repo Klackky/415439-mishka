@@ -1,0 +1,62 @@
+.popup__wrapper{
+  padding-bottom: 45px;
+}
+
+.popup__header{
+  padding-top:36px;
+  padding-bottom:25px;
+  text-transform: uppercase;
+  padding-left: 90px;
+  padding-right: 80px;
+  margin:0px;
+}
+
+.popup__pick-size{
+  padding-left: 90px;
+  padding-right: 80px;
+  padding-bottom: 40px;
+}
+
+.popup__checkbox{
+  display: none;
+}
+
+.popup__sizes{
+  display: flex;
+  input[type="checkbox"]:checked + label::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: 25px;
+      width: 80px;
+      height: 50px;
+      border:2px solid #56c3b2;
+  }
+
+  input[type="checkbox"]:not(checked) + label::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: 25px;
+      width: 80px;
+      height: 50px;
+      border:2px solid #ececec;
+  }
+
+}
+
+.popup__content{
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.popup__label{
+  padding-left: 65px;
+  position: relative;
+}
+
+.popup__label--small{
+  margin-right:7px;
+}

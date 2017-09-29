@@ -1,0 +1,50 @@
+.items-for-sale{
+  background:url(../img/items-for-sale.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top:53px;
+
+   .items-for-sale__header{
+     font-size: 27px;
+     line-height: 30px;
+     font-weight: 700;
+     text-align: center;
+     padding-left: 38px;
+     padding-right: 38px;
+   }
+   .items-for-sale__item {
+     color:#ffffff;
+     padding-top:30px;
+     padding-bottom: 26px;
+     display: block;
+     text-decoration: none;
+     padding-left:30px;
+     font-size: 19px;
+     line-height: 24px;
+     font-weight: bold;
+     position: relative;
+     padding-right: 185px;
+
+   }
+   .items-for-sale__item--interior{
+     background-color: #63d1bb;
+     margin-top: 121px;
+     &::after{
+       content: url(../img/icon-interior.svg);
+       opacity: 0.2;
+       position: absolute;
+       right: 45px;
+       top: 30px;
+     }
+   }
+   .items-for-sale__item--toys{
+     background-color: #56c3b2;
+     &::after{
+       content: url(../img/icon-toy.svg);
+       opacity: 0.2;
+       position: absolute;
+       right: 45px;
+       top: 30px;
+     }
+   }
+}
