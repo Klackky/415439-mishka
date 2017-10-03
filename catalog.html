@@ -7,20 +7,25 @@
     </head>
     <body>
       <header class="page-header">
-        <a class="logo" href="#">
-        <img class="logo__img" src="img/mishka-logo.svg" width="88" height="44" alt="Мишка">
-        </a>
         <nav class="main-nav">
+          <div class="main-nav__wrapper">
+          <a class="logo" href="#">
+          <img src="img/mishka-logo.svg" width="88" height="44" alt="Мишка">
+          </a>
           <button class="main-nav__button" type="button"> Меню </button>
           <div class="main-nav__dropdown">
-            <a class="main-nav__item" href="#"> Каталог товаров </a>
-            <a class="main-nav__item" href="#"> Вязание на заказ </a>
-            <form class="main-nav__form">
+            <a class="main-nav__item main-nav__item--site-catalog" href="#"> Каталог товаров </a>
+            <a class="main-nav__item main-nav__item--site-catalog" href="#"> Вязание на заказ </a>
+            <span class="main-nav__item main-nav__item--delivery"> Бесплатная доставка по России </span>
+          </div>
+            <div class="main-nav__user-menu">
+             <form class="main-nav__form">
                 <input class="main-nav__form-input" type="search" id="search-head" name="search" placeholder="Поиск по сайту">
                 <label class="main-nav__form-label" for="search-head"> Поиск </label>
-            </form>
-            <a class="main-nav__item" href="#"> Корзина: пока пуста </a>
+             </form>
+             <a class="main-nav__item main-nav__item--cart" href="#"> Корзина: пока пуста </a>
           </div>
+      </div>
         </nav>
           <h1 class="page-header__header"> Каталог товаров </h1>
       </header>
@@ -29,6 +34,7 @@
           <section class="items-container">
             <article class="item">
                 <a class="item__image" href="#"> <img src="img/photo-hare-mobile@1x.jpg" width="260" height-"195" alt="rabbit"> </a>
+              <div class="item__about">
                 <div class="item__description">
                   <a class="item__header" href="#"> Зайчик-попрыгайчик </a>
                   <p class="item__dimensions"> Рост 30 см, вес 200 г </p>
@@ -36,9 +42,11 @@
                 <div class="item__price-content">
                   <p class="item__price"> 1 200 руб. </p>
                 </div>
+              </div>
             </article>
             <article class="item">
                 <a class="item__image" href="#"> <img src="img/photo-bowl-mobile@1x.jpg" width="260" height-"195" alt="knitted bin"> </a>
+              <div class="item__about">
                 <div class="item__description">
                   <a class="item__header" href="#"> Корзинка для белья </a>
                   <p class="item__dimensions"> Диаметр 15 см, высота 10 см </p>
@@ -46,9 +54,11 @@
                 <div class="item__price-content">
                   <p class="item__price"> 690 руб. </p>
                 </div>
+              </div>
             </article>
             <article class="item">
                 <a class="item__image" href="#"> <img src="img/photo-toys-mobile@1x.jpg" width="260" height-"195" alt="large basket for toys"> </a>
+              <div class="item__about">
                 <div class="item__description">
                   <a class="item__header" href="#"> Большая корзинка для игрушек </a>
                   <p class="item__dimensions"> Диаметр 30 см, высота 30 см </p>
@@ -56,6 +66,7 @@
                 <div class="item__price-content">
                   <p class="item__price"> 1 500 руб. </p>
                 </div>
+              </div>
             </article>
             <section class="item__process">
                 <h2 class="item__header item__header--process"> Процесс производства </h2>

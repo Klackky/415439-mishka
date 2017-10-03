@@ -1,7 +1,8 @@
 $nav-border: 1px solid #ececec;
+
 .main-nav{
   position: relative;
-
+}
 .main-nav__button{
   font-size: 0px;
   outline:none;
@@ -13,16 +14,18 @@ $nav-border: 1px solid #ececec;
   cursor: pointer;
   position: absolute;
   right: 30px;
-  top:-50px;
+  top:30px;
 }
-
+.main-nav__user-menu{
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 600;
+}
 .main-nav__dropdown{
   font-size: 17px;
   line-height: 24px;
   font-weight: 600;
-  display: none;
-
-
+}
   .main-nav__item{
    color:#000000;
    text-decoration: none;
@@ -41,7 +44,10 @@ $nav-border: 1px solid #ececec;
     border-bottom: $nav-border;
     padding-left: 75px;
     padding-right: 70px;
-
+}
+.main-nav__item--delivery{
+  display: none;
+}
  .main-nav__form-label{
    background: url(../img/icon-search.svg);
    width: 16px;
@@ -63,6 +69,70 @@ $nav-border: 1px solid #ececec;
    opacity: 0.7;
 }
   }
+
+
+@media (max-width:768px),
+(min-width:320px){
+  .main-nav__dropdown{
+    display: none;
+  }
+  .main-nav__user-menu{
+    display: none;
   }
 }
+@media (min-width: 768px) {
+  .main-nav__dropdown{
+    display: inline-flex;
+    order:3;
+    width: 100%;
+    justify-content:space-evenly;
+  }
+  .main-nav__wrapper{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .main-nav__button{
+    display: none;
+  }
+  .main-nav__user-menu{
+    order:2;
+    display: flex;
+    justify-content: flex-end;
+    width: 55%;
+    border-bottom: 1px solid #ececec;
+  }
+  .main-nav__form{
+    font-size: 0;
+    padding-right:0px;
+    padding-left: 0px;
+    min-width: 82px;
+    border-right: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    padding-top: 35px;
+  }
+  .main-nav__item--delivery{
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+    padding-right: 0px;
+    font-weight: normal;
+    text-align: center;
+    margin-left: 13%;
+    min-width: 262px;
+    padding-left: 0px;
+  }
+  .main-nav__form-input{
+    display: none;
+    }
+  .main-nav__item--cart{
+    padding-top: 35px;
+  }
+  .main-nav__item--site-catalog{
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }

@@ -195,6 +195,56 @@ $tiffany-color:#63d1bb;
 .order-form__image{
   opacity: 0.5;
   position: absolute;
-  top:35px;
+  bottom:20px;
   right: 5px;
 }
+@media (min-width: 768px){
+  .order-form__fieldset-wrapper{
+    display: flex;
+  }
+  .order-form__legend{
+      width: 20%;
+    &::after{
+      display: none;
+    }
+  }
+  .order-form__radio-content{
+    margin-bottom: 30px;
+  }
+  .order-form__ckeckbox-wrapper{
+    display: flex;
+    flex: 1 0 75%;
+    flex-flow: row wrap;
+  }
+.order-form__checkbox-content{
+  width: 30%;
+}
+.order-form__input-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.order-form__input-name-content{
+  display: flex;
+}
+.order-form__label-name{
+  margin-right: 25px;
+}
+.order-form__input-contacts-content{
+  display: flex;
+}
+.order-form__label-active{
+  width: 25%;
+  &::after{
+    display: none;
+  }
+}
+.order-form__send-order{
+  display: flex;
+  justify-content: space-between;
+}
+.order-form__span{
+  order:2;
+  padding-top: 20px;
+}
+  }

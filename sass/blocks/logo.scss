@@ -1,9 +1,20 @@
 $nav-border: 1px solid #ececec;
 .logo{
   margin:auto;
-  display: block;
-  padding-left: 117px;
+  margin-left: 117px;
   border-bottom: $nav-border;
   padding-top: 19px;
   padding-bottom: 10px;
+  width: 88px;
+}
+
+@media only screen
+and (min-width: 720px){
+  .logo{
+    order: 1;
+    width: 40%;
+    margin: 0px;
+    width: 45%;
+    text-align: center;
+  }
 }

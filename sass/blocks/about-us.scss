@@ -80,3 +80,12 @@ $padding-bottom-for-items:15px;
     padding-bottom:$padding-bottom-for-items;
   }
 }
+@media (min-width: 768px){
+  .about-us__list{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .about-us__item{
+    flex: 1 0 49%;
+  }
+}
