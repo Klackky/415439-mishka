@@ -94,3 +94,30 @@ $standart-border: 1px solid #ececec;
     margin-top: -50px;
   }
 }
+@media (min-width: 1150px){
+  .weekly-promo__header-container{
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-left: 20px;
+  }
+  .weekly-promo__header{
+    margin-left: 60px;
+    z-index: 5;
+  }
+  .weekly-promo__description{
+    margin-left: 180px;
+    width: 30%;
+    flex: 0 0 30%;
+  }
+  .weekly-promo__order{
+    margin-left: 180px;
+    width: 30%;
+    flex: 0 0 30%;
+  }
+  .weekly-promo__header{
+    font-size: 53px;
+  }
+  .weekly-promo__wrapper{
+    padding: 0px;
+  }
+}

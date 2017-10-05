@@ -89,3 +89,12 @@ $padding-bottom-for-items:15px;
     flex: 1 0 49%;
   }
 }
+@media (min-width: 1150px){
+  .about-us__header{
+    font-size: 53px;
+  }
+  .about-us__wrapper{
+    margin-left: 180px;
+    padding: 0px;
+  }
+}

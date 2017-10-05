@@ -16,8 +16,12 @@
         <div class="main-nav__dropdown">
           <a class="main-nav__item main-nav__item--site-catalog" href="#"> Каталог товаров </a>
           <a class="main-nav__item main-nav__item--site-catalog" href="#"> Вязание на заказ </a>
-          <span class="main-nav__item main-nav__item--delivery"> Бесплатная доставка по России </span>
         </div>
+        <div class="main-nav__menu-container">
+          <a class="main-nav__item main-nav__item--hidden" href="#"> Новые поступления </a>
+          <a class="main-nav__item main-nav__item--hidden" href="#"> Распродажа </a>
+        <a class="main-nav__item main-nav__item--delivery" href="#"> Бесплатная доставка по России </a>
+      </div>
           <div class="main-nav__user-menu">
            <form class="main-nav__form">
               <input class="main-nav__form-input" type="search" id="search-head" name="search" placeholder="Поиск по сайту">
@@ -30,7 +34,7 @@
       <h1 class="page-header__header"> Вязание на заказ </h1>
     </header>
     <main class="page-content">
-      <div class="page-content__wrapper">
+      <div class="page-content__wrapper-form">
         <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="order-form__text"> Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали. </p>
           <fieldset class="order-form__fieldset">
@@ -48,7 +52,7 @@
           </div>
         </div>
           </fieldset>
-          <fieldset class="order-form__fieldset">
+          <fieldset class="order-form__fieldset order-form__fieldset--color">
             <div class="order-form__fieldset-wrapper">
             <legend class="order-form__legend"> Цвет </legend>
             <div class="order-form__ckeckbox-wrapper">
@@ -98,6 +102,7 @@
           </div>
         </div>
           </fieldset>
+          <div class="order-form__fieldset-contacts-wrapper">
           <fieldset class="order-form__fieldset">
             <p class="order-form__input-contacts-content">
               <label class="order-form__label-active" for="phone"> Тел </label>
@@ -112,7 +117,9 @@
               <img class="order-form__image" src="img/icon-mail.svg" width="30" height="30" alt="email">
             </p>
           </fieldset>
+        </div>
           <fieldset class="order-form__fieldset">
+            <div class="order-form__fieldset-wrapper">
             <legend class="order-form__legend"> Доп </legend>
             <textarea class="order-form__textarea" name="text" rows="5" cols="50" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
@@ -120,6 +127,7 @@
             <span class="order-form__span"> *Поля обязательны для заполнения </span>
             <button class="button button--send-order" type="submit"> Отправить заказ </button>
           </div>
+        </div>
         </form>
       </div>
     </main>
