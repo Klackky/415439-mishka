@@ -60,5 +60,28 @@
 @media (min-width: 1150px){
   .contacts__wrapper{
     padding-left: 170px;
+    padding-bottom: 0px;
+  }
+  .contacts{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+  }
+  .contacts__map-and-button-container{
+    width:50%;
+    padding-bottom: 0px;
+  }
+  .contacts__wrapper{
+    width: 30%;
+  }
+  .contacts__contact-info{
+    flex-direction: column;
+  }
+  .contacts__address-container{
+    margin-left: 0;
+    width: 70%;
+  }
+  .contacts__map{
+    padding-bottom: 0px;
   }
 }
