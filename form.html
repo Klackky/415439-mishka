@@ -7,29 +7,40 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="logo" href="#">
-      <img class="logo__img" src="img/mishka-logo.svg" width="88" height="44" alt="Мишка">
-      </a>
       <nav class="main-nav">
+        <div class="main-nav__wrapper">
+        <a class="logo" href="#">
+        <img src="img/mishka-logo.svg" width="88" height="44" alt="Мишка">
+        </a>
         <button class="main-nav__button" type="button"> Меню </button>
         <div class="main-nav__dropdown">
-          <a class="main-nav__item" href="#"> Каталог товаров </a>
-          <a class="main-nav__item" href="#"> Вязание на заказ </a>
-          <form class="main-nav__form">
+          <a class="main-nav__item main-nav__item--site-catalog" href="#"> Каталог товаров </a>
+          <a class="main-nav__item main-nav__item--site-catalog" href="#"> Вязание на заказ </a>
+        </div>
+        <div class="main-nav__menu-container">
+          <a class="main-nav__item main-nav__item--hidden" href="#"> Новые поступления </a>
+          <a class="main-nav__item main-nav__item--hidden" href="#"> Распродажа </a>
+        <a class="main-nav__item main-nav__item--delivery" href="#"> Бесплатная доставка по России </a>
+      </div>
+          <div class="main-nav__user-menu">
+           <form class="main-nav__form">
               <input class="main-nav__form-input" type="search" id="search-head" name="search" placeholder="Поиск по сайту">
               <label class="main-nav__form-label" for="search-head"> Поиск </label>
-          </form>
-          <a class="main-nav__item" href="#"> Корзина: пока пуста </a>
+           </form>
+           <a class="main-nav__item main-nav__item--cart" href="#"> Корзина: пока пуста </a>
         </div>
+    </div>
       </nav>
       <h1 class="page-header__header"> Вязание на заказ </h1>
     </header>
     <main class="page-content">
-      <div class="page-content__wrapper">
+      <div class="page-content__wrapper-form">
         <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="order-form__text"> Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали. </p>
           <fieldset class="order-form__fieldset">
+            <div class="order-form__fieldset-wrapper">
             <legend class="order-form__legend"> Тип </legend>
+            <div class="order-form__radio-wrapper">
             <p class="order-form__radio-content">
               <input class="order-form__radio" type="radio" id="accessory" name="radio" value="accessory" checked>
               <label class="order-form__label-radio" for="accessory"> Аксессуар для интерьера </label>
@@ -38,9 +49,13 @@
               <input class="order-form__radio" type="radio" id="toy" name="radio" value="toy">
               <label class="order-form__label-radio" for="toy"> Детская игрушка </label>
             </p>
+          </div>
+        </div>
           </fieldset>
-          <fieldset class="order-form__fieldset">
+          <fieldset class="order-form__fieldset order-form__fieldset--color">
+            <div class="order-form__fieldset-wrapper">
             <legend class="order-form__legend"> Цвет </legend>
+            <div class="order-form__ckeckbox-wrapper">
             <p class="order-form__checkbox-content">
               <input class="order-form__checkbox" type="checkbox" name="white" id="white" checked>
               <label class="order-form__label" for="white"> Белый </label>
@@ -65,9 +80,13 @@
               <input class="order-form__checkbox" type="checkbox" name="orange" id="orange">
               <label class="order-form__label" for="orange"> Оранжевый </label>
             </p>
+          </div>
+        </div>
           </fieldset>
           <fieldset class="order-form__fieldset">
+            <div class="order-form__fieldset-wrapper">
             <legend class="order-form__legend"> ФИО </legend>
+            <div class="order-form__input-wrapper">
             <p class="order-form__input-name-content">
               <label class="order-form__label-name" for="name"> Имя: </label>
               <input class="order-form__input-text" type="text" name="name" id="name" placeholder="Введите ваше имя*">
@@ -80,7 +99,10 @@
               <label class="order-form__label-name" for="patronymic"> Отчество: </label>
               <input class="order-form__input-text" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
             </p>
+          </div>
+        </div>
           </fieldset>
+          <div class="order-form__fieldset-contacts-wrapper">
           <fieldset class="order-form__fieldset">
             <p class="order-form__input-contacts-content">
               <label class="order-form__label-active" for="phone"> Тел </label>
@@ -95,7 +117,9 @@
               <img class="order-form__image" src="img/icon-mail.svg" width="30" height="30" alt="email">
             </p>
           </fieldset>
+        </div>
           <fieldset class="order-form__fieldset">
+            <div class="order-form__fieldset-wrapper">
             <legend class="order-form__legend"> Доп </legend>
             <textarea class="order-form__textarea" name="text" rows="5" cols="50" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
@@ -103,6 +127,7 @@
             <span class="order-form__span"> *Поля обязательны для заполнения </span>
             <button class="button button--send-order" type="submit"> Отправить заказ </button>
           </div>
+        </div>
         </form>
       </div>
     </main>

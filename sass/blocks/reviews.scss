@@ -43,3 +43,38 @@
 .reviews__button--previous{
   background-image: url(../img/icon-left-arrow.svg);
 }
+@media (min-width: 768px){
+ .reviews{
+   background-image:url(../img/review@1x.jpg);
+   background-repeat: no-repeat;
+   position: relative;
+   &::after{
+     content:"";
+     background-image: url(../img/zigzag-line-desktop.svg);
+     width: 100%;
+     height: 38px;
+   }
+ }
+ .reviews__wrapper{
+   padding-top: 80px;
+   padding-bottom: 50px;
+ }
+.reviews__controls{
+  position: absolute;
+  right: 70px;
+  bottom: 28px;
+}
+.reviews__button{
+  border: none;
+  width: 80px;
+}
+.reviews__header{
+  font-size: 43px;
+  line-height: 50px;
+}
+}
+@media (min-width: 1150px){
+ .reviews__wrapper{
+   padding-left: 170px;
+ }
+}

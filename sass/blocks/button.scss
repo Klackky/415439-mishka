@@ -31,3 +31,27 @@
   margin-left: 35px;
   margin-right: 35px;
 }
+@media (min-width: 768px){
+  .button--mobile{
+    width: 100px;
+    position: absolute;
+    bottom: 250px;
+    right: 50px;
+  }
+  .button--write-us{
+    width: 230px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: auto;
+  }
+  .button--make-order{
+    order: 4;
+  }
+}
+@media (min-width: 1150px){
+  .button--write-us{
+    margin: -70px 0px 0px 170px;
+    padding-bottom: 0px;
+    height: 40px;
+  }
+}

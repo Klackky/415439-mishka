@@ -8,3 +8,16 @@
   text-align: center;
   margin: 0px;
 }
+
+@media (min-width: 768px){
+  .page-header__header{
+    margin-top: -15px;
+    font-size: 43px;
+    padding-top: 80px;
+  }
+}
+@media (min-width: 1150px){
+  .page-header__header{
+    margin-top:0px;
+  }
+}

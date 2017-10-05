@@ -3,3 +3,15 @@
   padding-right: 30px;
   padding-bottom: 55px;
 }
+@media (min-width: 768px){
+  .page-content__wrapper-form{
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1150px){
+  .page-content__index-wrapper{
+    margin-left:100px;
+    margin-right: 100px;
+  }
+}

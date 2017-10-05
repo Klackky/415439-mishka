@@ -4,36 +4,54 @@
       <meta charset="utf-8">
       <title>HTML Academy: Мишка</title>
       <link href="css/style.css" rel="stylesheet">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header class="page-header">
-          <a class="logo" href="#">
-          <img class="logo__img" src="img/mishka-logo.svg" width="88" height="44" alt="Мишка">
-          </a>
           <nav class="main-nav">
+            <div class="main-nav__wrapper">
+            <a class="logo" href="#">
+            <img src="img/mishka-logo.svg" width="88" height="44" alt="Мишка">
+            </a>
             <button class="main-nav__button" type="button"> Меню </button>
             <div class="main-nav__dropdown">
-              <a class="main-nav__item" href="#"> Каталог товаров </a>
-              <a class="main-nav__item" href="#"> Вязание на заказ </a>
-              <form class="main-nav__form">
+              <a class="main-nav__item main-nav__item--site-catalog" href="#"> Каталог товаров </a>
+              <a class="main-nav__item main-nav__item--site-catalog" href="#"> Вязание на заказ </a>
+            </div>
+            <div class="main-nav__menu-container">
+              <a class="main-nav__item main-nav__item--hidden" href="#"> Новые поступления </a>
+              <a class="main-nav__item main-nav__item--hidden" href="#"> Распродажа </a>
+            <a class="main-nav__item main-nav__item--delivery" href="#"> Бесплатная доставка по России </a>
+          </div>
+              <div class="main-nav__user-menu">
+               <form class="main-nav__form">
                   <input class="main-nav__form-input" type="search" id="search-head" name="search" placeholder="Поиск по сайту">
                   <label class="main-nav__form-label" for="search-head"> Поиск </label>
-              </form>
-              <a class="main-nav__item" href="#"> Корзина: пока пуста </a>
+               </form>
+               <a class="main-nav__item main-nav__item--cart" href="#"> Корзина: пока пуста </a>
             </div>
+        </div>
           </nav>
           <div class="items-for-sale">
             <h1 class="items-for-sale__header"> Милые штучки ручной <br> работы для дома </h1>
+          <div class="items-for-sale__item-container">
             <a class="items-for-sale__item items-for-sale__item--interior" href="#"> Предметы интерьера </a>
             <a class="items-for-sale__item items-for-sale__item--toys" href="#"> Детские игрушки </a>
           </div>
+          </div>
       </header>
       <main class="page-content">
+        <div class="page-content__index-wrapper">
           <section class="weekly-promo">
             <div class="weekly-promo__wrapper">
+              <div class="weekly-promo__header-container">
                 <h2 class="weekly-promo__header"> Вязаные корзинки </h2>
                 <h4 class="weekly-promo__subheader"> Товар недели </h4>
-                <p class="weekly-promo__description"> Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах. </p>
+              </div>
+              <div class="weekly-promo__promo-item">
+                <div class="weekly-promo__description">
+                <p class="weekly-promo__text"> Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах. </p>
                 <table class="weekly-promo__info">
                   <tbody>
                       <tr class="weekly-promo__info-item">
@@ -50,21 +68,25 @@
                       </tr>
                     </tbody>
                 </table>
+              </div>
                 <img class="weekly-promo__image" src="img/bin.jpg" width="260" height="315" alt="вязаная корзинка">
+              <div class="weekly-promo__order">
                 <p class="weekly-promo__price"> Цена: 990 руб. </p>
                 <a class="button" href="#"> Заказать </a>
+              </div>
+              </div>
             </div>
           </section>
           <section class="about-us">
             <div class="about-us__wrapper">
                 <h2 class="about-us__header"> Коротко о нас: </h2>
                 <ul class="about-us__list">
-                  <li class="about-us__item about-us__item--material"> Экологически чистые материалы </li>
-                  <li class="about-us__item about-us__item--style"> Скандинавский стиль по российской цене </li>
-                  <li class="about-us__item about-us__item--likes"> Увеличивает  лайки на фотографиях </li>
-                  <li class="about-us__item about-us__item--handmade"> Связано вручную с любовью и умилением </li>
-                  <li class="about-us__item about-us__item--producer"> Поддержка отечественного производителя </li>
-                  <li class="about-us__item about-us__item--giftwrap"> Поставляется в подарочной упаковке </li>
+                  <li class="about-us__item about-us__item--material"> Экологически <br>чистые материалы </li>
+                  <li class="about-us__item about-us__item--style"> Скандинавский стиль <br> по российской цене </li>
+                  <li class="about-us__item about-us__item--likes"> Увеличивает  лайки <br> на фотографиях </li>
+                  <li class="about-us__item about-us__item--handmade"> Связано вручную с <br> любовью и умилением </li>
+                  <li class="about-us__item about-us__item--producer"> Поддержка отечественного <br> производителя </li>
+                  <li class="about-us__item about-us__item--giftwrap"> Поставляется в <br> подарочной упаковке </li>
                 </ul>
             </div>
           </section>
@@ -80,27 +102,32 @@
                   <button class="reviews__button reviews__button--previous" type="button"> </button>
                   <button class="reviews__button reviews__button--next" type="button"> </button>
                 </div>
-                <a class="button" href="#"> Написать </a>
+                <a class="button button--mobile" href="#"> Написать </a>
             </div>
           </article>
           <section class="contacts">
             <div class="contacts__wrapper">
                 <h2 class="contacts__header"> Контакты </h2>
+              <div class="contacts__contact-info">
                 <dl class="contacts__email-container">
-                  <dt class="contacts__email"> e-mail </dt>
+                  <dt class="contacts__email"> e-mail: </dt>
                   <dd> <a class="contacts__email-content" href="#"> info@mimimishkashop.ru </a> </dd>
                 </dl>
                 <dl class="contacts__address-container">
-                  <dt class="contacts__address"> адрес </dt>
-                  <dd class="contacts__address-content">  г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
+                  <dt class="contacts__address"> адрес: </dt>
+                  <dd class="contacts__address-content">  г. Санкт-Петербург, <br> ул. Большая Конюшенная, <br> д. 19/8, офис 101</dd>
                 </dl>
             </dl>
+            </div>
+          </div>
+            <div class="contacts__map-and-button-container">
                 <div class="contacts__map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.5991043651625!2d30.32089461632972!3d59.93879418187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1506107916918" width="320" height="450" style="border:0" allowfullscreen></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.5991043651625!2d30.32089461632972!3d59.93879418187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1506107916918" width="100%" height="450" style="border:0" allowfullscreen></iframe>
                 </div>
-                  <a class="button" href="#"> Напишите нам </a>
-              </div>
+            </div>
+            <a class="button button--write-us" href="#"> Напишите нам </a>
           </section>
+        </div>
       </main>
       <footer class="main-footer">
           <div class="social">
@@ -110,7 +137,7 @@
           </div>
           <div class="main-footer__developed-by-container">
             <p class="main-footer__developed-by"> Разработано </p>
-            <a class="main-footer__htmlacademy" href="#"> <img src="img/html.svg" width="28" height="35" alt="htmlacademy"> </a>
+            <a class="main-footer__htmlacademy" href="#"> <img src="img/htmlacademy.svg" width="28" height="35" alt="htmlacademy"> </a>
           </div>
       </footer>
       <div class="popup popup--closed">

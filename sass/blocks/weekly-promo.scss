@@ -1,16 +1,13 @@
 $standart-border: 1px solid #ececec;
 
-@mixin header {
-  font-size:25px;
-  line-height:30px;
-  font-weight:bold;
-}
 .weekly-promo__wrapper{
   padding-left:30px;
   padding-right: 30px;
 }
 .weekly-promo__header{
- @include header;
+  font-size:25px;
+  line-height:30px;
+  font-weight:bold;
  margin: 0px;
  padding-top: 25px;
 }
@@ -23,7 +20,7 @@ $standart-border: 1px solid #ececec;
   padding-top:5px;
   padding-bottom:12px;
 }
-.weekly-promo__description{
+.weekly-promo__text{
   font-size:15px;
   line-height: 24px;
 }
@@ -54,4 +51,73 @@ $standart-border: 1px solid #ececec;
   padding-bottom: 30px;
   padding-top: 15px;
   margin: 0px;
+}
+@media (min-width: 768px){
+  .weekly-promo__wrapper{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .weekly-promo__header-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 34px;
+  }
+  .weekly-promo__header{
+    padding-top: 0px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .weekly-promo__subheader{
+    padding-right: 26px;
+    font-size: 17px;
+    flex: 0 0 75px;
+    text-align: center;
+  }
+  .weekly-promo__promo-item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+  .weekly-promo__info{
+    flex: 0 0 44%;
+    order: 3;
+  }
+  .weekly-promo__image{
+    flex: 0 0 44%;
+    margin-left: 7%;
+    flex-grow: 1;
+  }
+  .weekly-promo__description{
+    flex: 0 0 44%;
+  }
+  .weekly-promo__order{
+    margin-top: -50px;
+  }
+}
+@media (min-width: 1150px){
+  .weekly-promo__header-container{
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-left: 20px;
+  }
+  .weekly-promo__header{
+    margin-left: 60px;
+    z-index: 5;
+  }
+  .weekly-promo__description{
+    margin-left: 180px;
+    width: 30%;
+    flex: 0 0 30%;
+  }
+  .weekly-promo__order{
+    margin-left: 180px;
+    width: 30%;
+    flex: 0 0 30%;
+  }
+  .weekly-promo__header{
+    font-size: 53px;
+  }
+  .weekly-promo__wrapper{
+    padding: 0px;
+  }
 }
