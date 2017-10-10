@@ -16,6 +16,13 @@
   background-color: transparent;
 }
 
+.button--write-us{
+  width: 260px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
 .button--add{
   background-color:#63d1bb;
   border: none;
@@ -32,20 +39,26 @@
   margin-right: 35px;
 }
 @media (min-width: 768px){
-  .button--mobile{
-    width: 100px;
+  .button--write-review{
+    width: 170px;
     position: absolute;
-    bottom: 250px;
-    right: 50px;
+    bottom: 322px;
+    right: 32px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
   }
   .button--write-us{
-    width: 230px;
+    width: 225px;
     padding-right: 0px;
     padding-left: 0px;
-    margin: auto;
+    margin-left: 36%;
   }
   .button--make-order{
     order: 4;
+  }
+  .button--order-promo{
+      width:115px;
   }
 }
 @media (min-width: 1150px){

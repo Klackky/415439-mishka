@@ -2,7 +2,7 @@ $nav-border: 1px solid #ececec;
 .logo{
   border-bottom: $nav-border;
   padding-top: 19px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: center;
 }
@@ -11,9 +11,14 @@ $nav-border: 1px solid #ececec;
 and (min-width: 768px){
   .logo{
     order: 1;
-    width: 38%;
     margin: 0px;
-    padding-left: 6%;
+    border: none;
+    text-align: left;
+    width: 50%;
+    padding-top: 22px;
+  }
+  .logo__image{
+    margin-right: 170px;
   }
 }
 @media (min-width: 1150px){

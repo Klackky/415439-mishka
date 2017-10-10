@@ -23,10 +23,11 @@ $standart-border: 1px solid #ececec;
 .weekly-promo__text{
   font-size:15px;
   line-height: 24px;
+  margin-bottom: 14px;
 }
 .weekly-promo__info{
   width: 100%;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   border-collapse: collapse;
 }
 .weekly-promo__info-item{
@@ -34,13 +35,15 @@ $standart-border: 1px solid #ececec;
 
   th{
     border-bottom: $standart-border;
-    padding-bottom: 13px;
-    padding-top: 13px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    font-weight: normal;
   }
   td{
     border-bottom: $standart-border;
-    padding-bottom: 13px;
-    padding-top: 13px;
+    padding-bottom: 9px;
+    padding-top: 7px;
+    padding-left: 21px;
   }
 }
 .weekly-promo__price{
@@ -48,30 +51,41 @@ $standart-border: 1px solid #ececec;
   line-height: 24px;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 27px;
   padding-top: 15px;
   margin: 0px;
 }
 @media (min-width: 768px){
   .weekly-promo__wrapper{
     padding-left: 50px;
-    padding-right: 50px;
+  }
+  .weekly-promo__text{
+    padding-top: 21px;
+    font-size: 17px;
+    line-height: 30px;
   }
   .weekly-promo__header-container{
     display: flex;
     justify-content: space-between;
-    padding-top: 34px;
+    padding-top: 48px;
   }
   .weekly-promo__header{
     padding-top: 0px;
     font-size: 43px;
     line-height: 50px;
   }
+  .weekly-promo__info-item{
+    td{
+      padding-top: 10px;
+      padding-left: 2px;
+    }
+  }
   .weekly-promo__subheader{
     padding-right: 26px;
     font-size: 17px;
-    flex: 0 0 75px;
+    flex: 0 0 80px;
     text-align: center;
+    margin-top: 5px;
   }
   .weekly-promo__promo-item{
     display: flex;
@@ -81,17 +95,25 @@ $standart-border: 1px solid #ececec;
   .weekly-promo__info{
     flex: 0 0 44%;
     order: 3;
+    margin-top: 35px;
+    font-size: 15px;
   }
   .weekly-promo__image{
-    flex: 0 0 44%;
-    margin-left: 7%;
+    width: 40%;
     flex-grow: 1;
+    margin-left: 40px;
+    margin-top: 47px;
   }
   .weekly-promo__description{
     flex: 0 0 44%;
   }
   .weekly-promo__order{
-    margin-top: -50px;
+    margin-top: -132px;
+  }
+  .weekly-promo__price{
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 35px;
   }
 }
 @media (min-width: 1150px){

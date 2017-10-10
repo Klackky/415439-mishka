@@ -1,6 +1,7 @@
 .reviews__wrapper{
   padding-left: 30px;
   padding-right: 30px;
+  padding-top: 20px;
 }
 
 .reviews__text{
@@ -12,6 +13,8 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 5px;
 }
 
 .reviews__nickname{
@@ -23,7 +26,7 @@
 .reviews__controls{
   display: flex;
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 38px;
 }
 .reviews__button{
   background-position: center;
@@ -58,19 +61,42 @@
  .reviews__wrapper{
    padding-top: 80px;
    padding-bottom: 50px;
+   margin-top: 85px;
+   padding-left: 42px;
  }
 .reviews__controls{
   position: absolute;
-  right: 70px;
-  bottom: 28px;
+  right: 43px;
+  bottom: 8px;
+}
+.reviews__button--next{
+  margin-right: -4px;
 }
 .reviews__button{
   border: none;
   width: 80px;
 }
+.reviews__author{
+  margin-top: 56px;
+  padding-left: 8px;
+  font-size: 18px;
+  line-height: 24px;
+}
+.reviews__nickname{
+  padding-left: 8px;
+  font-size: 17px;
+  text-decoration: none;
+}
 .reviews__header{
   font-size: 43px;
   line-height: 50px;
+  margin-top: 0px;
+}
+.reviews__text{
+  font-size: 17px;
+  line-height: 30px;
+  padding-top: 15px;
+  padding-left: 6px;
 }
 }
 @media (min-width: 1150px){

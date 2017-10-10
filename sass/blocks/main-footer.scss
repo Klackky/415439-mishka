@@ -1,12 +1,17 @@
 .main-footer{
   background-color: #f1f1f1;
 }
-
+.main-footer__logo{
+  display: none;
+}
 .main-footer__developed-by-container{
   display: flex;
-  padding-top: 50px;
+  padding-top: 10px;
   padding-bottom: 25px;
   justify-content: center;
+  width: 260px;
+  margin: auto;
+  border-top: 1px solid #e5e5e5;
 }
 .main-footer__developed-by{
   font-size: 19px;
@@ -24,10 +29,17 @@
     padding-top: 50px;
     justify-content: space-between;
     padding-left: 50px;
-    padding-right: 50px;
     padding-bottom: 50px;
+  }
+  .main-footer__logo{
+    display: block;
+    padding-top: 10px;
   }
   .main-footer__developed-by-container{
     padding: 0px;
+    margin: 0px;
+    border: none;
+    margin-right: 7px;
+    padding-top: 10px;
   }
 }
