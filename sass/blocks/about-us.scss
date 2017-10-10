@@ -151,10 +151,35 @@ $padding-bottom-for-items:15px;
 @media (min-width: 1150px){
   .about-us__header{
     font-size: 53px;
-    margin-bottom: 33px;
   }
   .about-us__wrapper{
-    margin-left: 180px;
+    margin-left: 270px;
+    margin-right: 100px;
     padding: 0px;
+    margin-top: 168px;
+  }
+  .about-us{
+    &::before{
+    top: -100px;
+    height: 44px;
+    background-size: 1128px 42px;
+    }
+  }
+  .about-us__list{
+    margin-left: 4px;
+  }
+  .about-us__item{
+    flex:0 0 41%;
+  }
+  .about-us__item--likes{
+    &::before{
+      padding-bottom: 18px;
+      padding-top: 63px;
+    }
+  }
+  .about-us__item--giftwrap{
+    &::before{
+      padding-top: 60px;
+    }
   }
 }

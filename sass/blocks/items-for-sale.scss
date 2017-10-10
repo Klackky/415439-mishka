@@ -1,4 +1,4 @@
-.items-for-sale{
+.items-for-sale__container{
   background:url(../img/items-for-sale.jpg);
   background-position: top center;
   background-repeat: no-repeat;
@@ -39,6 +39,9 @@
      margin-top: 120px;
    }
 @media (min-width: 768px){
+  .items-for-sale{
+    background-color: #f9f9f9;
+  }
   .items-for-sale__item-container{
     display: flex;
     margin-top: 370px;
@@ -75,8 +78,34 @@
   .items-for-sale__item{
     width: 50%;
   }
-  .items-for-sale{
+  .items-for-sale__container{
     background:url(../img/hero-tablet@1x.jpg);
     background-position: 48% 0%;
 }
+}
+@media (min-width: 1150px){
+  .items-for-sale__container{
+    background:url(../img/hero-desktop@1x.jpg);
+    background-position: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1050px;
+  }
+  .items-for-sale__item{
+    padding: 32px 100px 30px 36px;
+    background-position: 93% 54%;
+  }
+  .items-for-sale__header{
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .items-for-sale__item-container{
+    margin-top: 355px;
+    max-width: 1200px;
+    margin-left: 10px;
+    margin-right: -10px;
+    &::after{
+      bottom: 60px;
+    }
+  }
 }
