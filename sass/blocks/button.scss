@@ -37,6 +37,7 @@
   padding-right: 20px;
   margin-left: 35px;
   margin-right: 35px;
+  margin-top: -20px;
 }
 @media (min-width: 768px){
   .button--write-review{
@@ -56,6 +57,10 @@
   }
   .button--make-order{
     order: 4;
+    width: 580px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 43px;
   }
   .button--order-promo{
       width:115px;
@@ -63,7 +68,7 @@
 }
 @media (min-width: 1150px){
   .button--write-us{
-    margin: -50px 0px 0px 275px;
+    margin: -50px 0px 0px 175px;
     padding-bottom: 0px;
     height: 35px;
   }
@@ -74,5 +79,11 @@
   .button--write-review{
     bottom:325px;
     right: -16px;
+  }
+  .button--make-order{
+    width: 224px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 80px;
   }
 }

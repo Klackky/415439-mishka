@@ -111,7 +111,12 @@
   .contacts__wrapper{
     padding-left: 170px;
     padding-bottom: 0px;
-    margin-left: 100px;
+  }
+  .contacts__header{
+    &::before{
+        left: -100px;
+        top: -12px;
+    }
   }
   .contacts{
     display: flex;
@@ -128,7 +133,7 @@
     font-size: 53px;
   }
   .contacts__map-and-button-container{
-    width:39%;
+    width:50%;
     padding-bottom: 0px;
     padding-top: 60px;
   }
@@ -140,7 +145,7 @@
   }
   .contacts__address-container{
     margin-left: 0;
-    width: 70%;
+    width: 100%;
   }
   .contacts__map{
     padding-bottom: 0px;
