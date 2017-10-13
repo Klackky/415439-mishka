@@ -50,6 +50,14 @@ $nav-border: 1px solid #ececec;
     padding-left: 75px;
     padding-right: 70px;
 }
+.main-nav__item--cart{
+  position: relative;
+}
+.main-nav__icon-cart{
+  opacity: 0.3;
+  position: absolute;
+  right: 200px;
+}
 .main-nav__item--delivery{
   display: none;
 }

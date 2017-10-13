@@ -9,7 +9,7 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-        <a class="logo" href="#">
+        <a class="logo" href="index.html">
           <picture class="logo__image">
               <source media="(min-width:1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
@@ -18,8 +18,8 @@
         </a>
         <button class="main-nav__button" type="button"> Меню </button>
         <div class="main-nav__dropdown">
-          <a class="main-nav__item main-nav__item--site-catalog" href="#"> Каталог товаров </a>
-          <a class="main-nav__item main-nav__item--site-catalog" href="#"> Вязание на заказ </a>
+          <a class="main-nav__item main-nav__item--site-catalog" href="catalog.html"> Каталог товаров </a>
+          <a class="main-nav__item main-nav__item--site-catalog" href="form.html"> Вязание на заказ </a>
         </div>
         <div class="main-nav__menu-container">
           <a class="main-nav__item main-nav__item--hidden" href="#"> Новые поступления </a>
@@ -87,7 +87,7 @@
           </div>
         </div>
           </fieldset>
-          <fieldset class="order-form__fieldset">
+          <fieldset class="order-form__fieldset order-form__fieldset--name">
             <div class="order-form__fieldset-wrapper">
             <legend class="order-form__legend"> ФИО </legend>
             <div class="order-form__input-wrapper">
@@ -107,25 +107,25 @@
         </div>
           </fieldset>
           <div class="order-form__fieldset-contacts-wrapper">
-          <fieldset class="order-form__fieldset">
+          <fieldset class="order-form__fieldset order-form__fieldset--contacts">
             <p class="order-form__input-contacts-content">
               <label class="order-form__label-active" for="phone"> Тел </label>
               <input class="order-form__input-contacts" type="text" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ*">
               <img class="order-form__image" src="img/icon-phone.svg" width="30" height="30" alt="phone">
             </p>
           </fieldset>
-          <fieldset class="order-form__fieldset">
+          <fieldset class="order-form__fieldset order-form__fieldset--contacts">
             <p class="order-form__input-contacts-content">
-              <label class="order-form__label-active" for="email">  E-mail </label>
+              <label class="order-form__label-active order-form__label-active--email" for="email">  E-mail </label>
               <input class="order-form__input-contacts" type="text" name="email" id="email" placeholder="Ваш Email*">
               <img class="order-form__image" src="img/icon-mail.svg" width="30" height="30" alt="email">
             </p>
           </fieldset>
         </div>
-          <fieldset class="order-form__fieldset">
+          <fieldset class="order-form__fieldset order-form__fieldset--textarea">
             <div class="order-form__fieldset-wrapper">
             <legend class="order-form__legend"> Доп </legend>
-            <textarea class="order-form__textarea" name="text" rows="5" cols="50" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="order-form__textarea" name="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
           <div class="order-form__send-order">
             <span class="order-form__span"> *Поля обязательны для заполнения </span>
