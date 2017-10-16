@@ -9,6 +9,8 @@
      line-height: 30px;
      font-weight: 700;
      text-align: center;
+     padding-left: 20px;
+     padding-right: 20px;
    }
    .items-for-sale__item {
      color:#ffffff;
@@ -36,7 +38,8 @@
      background-position: 90% 54%;
    }
    .items-for-sale__item-container{
-     margin-top: 120px;
+     margin-top: 125px;
+     position: relative;
    }
 @media (min-width: 768px){
   .items-for-sale{
@@ -54,18 +57,18 @@
       height: 24px;
       background-image: url(../img/bg-zigzag-fill.svg);
       position: absolute;
-      bottom: 65px;
+      bottom: 0;
       background-repeat: repeat-x;
-      background-size: 668px 22px;
+      background-size: 668px 30px;
     }
   }
   .items-for-sale__item--interior{
-    height: 60px;
+    height: 70px;
     padding-right: 190px;
     font-size: 20px;
   }
   .items-for-sale__item--toys{
-    height: 60px;
+    height: 70px;
     padding-right: 198px;
     font-size: 20px;
   }
@@ -77,19 +80,25 @@
   }
   .items-for-sale__item{
     width: 50%;
+    &:hover{
+      height: 75px;
+      transform: translateY(-5px);
+    }
   }
   .items-for-sale__container{
     background:url(../img/hero-tablet@1x.jpg);
     background-position: 48% 0%;
+    background-repeat: no-repeat;
 }
 }
 @media (min-width: 1150px){
   .items-for-sale__container{
     background:url(../img/hero-desktop@1x.jpg);
-    background-position: 40%;
+    background-position: 50% 50%;
     margin-left: auto;
     margin-right: auto;
     width: 1050px;
+    background-repeat: no-repeat;
   }
   .items-for-sale__item{
     padding: 32px 100px 30px 36px;
@@ -102,10 +111,10 @@
   .items-for-sale__item-container{
     margin-top: 355px;
     max-width: 1200px;
-    margin-left: 10px;
-    margin-right: -10px;
+    margin-left: 0;
+    margin-right: 0;
     &::after{
-      bottom: 60px;
+    background-size: 1000px 30px;
     }
   }
 }

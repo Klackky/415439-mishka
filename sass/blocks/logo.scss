@@ -1,12 +1,19 @@
 $nav-border: 1px solid #ececec;
 .logo{
-  border-bottom: $nav-border;
   padding-top: 19px;
   padding-bottom: 15px;
+  width: 90px;
+  margin: auto;
   display: flex;
-  justify-content: center;
 }
-
+.logo__image{
+  &:hover{
+    opacity: 0.4;
+  }
+  &:active{
+    opacity: 0.2;
+  }
+}
 @media only screen
 and (min-width: 768px){
   .logo{
@@ -18,7 +25,9 @@ and (min-width: 768px){
     padding-top: 22px;
   }
   .logo__image{
-    margin-right: 170px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
   }
 }
 @media (min-width: 1150px){

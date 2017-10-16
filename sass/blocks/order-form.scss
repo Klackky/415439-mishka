@@ -64,6 +64,7 @@ $tiffany-color:#63d1bb;
   line-height: 18px;
   font-weight: bold;
   padding-top: 5px;
+  cursor: pointer;
     &::before{
       content: "";
       position: absolute;
@@ -73,6 +74,16 @@ $tiffany-color:#63d1bb;
       height: 36px;
       border-radius: 50%;
       border: 2px solid #444444;
+    }
+    &:hover{
+      &:before{
+        border-color:#62d1ba;
+      }
+    }
+    &:active{
+      &:before{
+        border-color:#d7d7d7;
+      }
     }
 }
 
@@ -103,7 +114,7 @@ $tiffany-color:#63d1bb;
   padding-top: 5px;
   position: relative;
   display: block;
-    &::before{
+    &:before{
     position: absolute;
     content: "";
     width: 35px;
@@ -111,6 +122,16 @@ $tiffany-color:#63d1bb;
     left: -62px;
     top: -5px;
     border: 2px solid #444444;
+    }
+    &:hover{
+      &:before{
+      border-color:#62d1ba;
+      }
+    }
+    &:active{
+      &:before{
+      border-color:#d7d7d7;
+      }
     }
 }
 
@@ -145,6 +166,12 @@ $tiffany-color:#63d1bb;
   border-bottom:2px solid black;
     &::placeholder{
       @include standart-placeholder;
+    }
+    &:hover{
+      border-color: #62d1ba;
+    }
+    &:active{
+      border-color: #62d1ba;
     }
 }
 
@@ -192,6 +219,12 @@ $tiffany-color:#63d1bb;
     &::placeholder{
       @include standart-placeholder;
     }
+    &:hover{
+      border-color: #62d1ba;
+    }
+    &:active{
+      border-color: #62d1ba;
+    }
 }
 
 .order-form__textarea{
@@ -203,6 +236,12 @@ $tiffany-color:#63d1bb;
       @include standart-placeholder;
       padding-left: 10px;
       padding-top: 10px;
+    }
+    &:hover{
+      border-color: #62d1ba;
+    }
+    &:active{
+      border-color: #62d1ba;
     }
 }
 
@@ -382,7 +421,7 @@ $tiffany-color:#63d1bb;
   }
   @media (min-width: 1150px){
   .order-form__fieldset{
-    padding-left: 110px;
+    padding-left: 120px;
     padding-right: 205px;
     padding-top: 30px;
   }
@@ -392,8 +431,8 @@ $tiffany-color:#63d1bb;
     margin-right: auto;
   }
   .order-form__fieldset--contacts{
-    padding-top: 0px;
     padding-bottom: 27px;
+    padding-top: 11px;
   }
   .order-form__radio-content{
     margin-bottom: 34px;
@@ -401,9 +440,13 @@ $tiffany-color:#63d1bb;
   }
   .order-form__fieldset--color{
     background-color: #f1f1f1;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     padding-top: 50px;
     max-width: 100%;
+  }
+  .order-form__fieldset--name{
+    padding-top: 60px;
+    padding-bottom: 35px;
   }
   .order-form__legend{
     padding-top: 12px;
@@ -411,19 +454,31 @@ $tiffany-color:#63d1bb;
     line-height: 16px;
     width: 10%;
   }
+  .order-form__input-name-content{
+    margin-bottom: 35px;
+  }
   .order-form__text{
-    padding-left: 224px;
-    padding-right: 220px;
+    padding-left: 250px;
+    padding-right: 230px;
     padding-top: 114px;
     padding-bottom: 20px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .order-form__input-text{
+    font-size: 19px;
+    padding-bottom: 14px;
   }
   .order-form__checkbox-content{
-    width: 25%;
+    width: 24.3%;
   }
   .order-form__send-order{
-    margin-left: 18%;;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0px;
-    width: 62%;
+    max-width: 700px;
+    padding-left: 0;
   }
   .order-form__ckeckbox-wrapper{
     flex: 1 0 99%;
@@ -437,14 +492,16 @@ $tiffany-color:#63d1bb;
   .order-form__label-active{
     width: 10%;
     padding-top: 10px;
+    padding-bottom: 0px;
   }
   .order-form__input-wrapper{
-    flex: 1 0 79%;
+    flex:0 0 86%;
   }
   .order-form__input-contacts{
-    flex: 1 0 79%;
-    padding-bottom: 0px;
+    flex: 0 0 82.5%;
     margin-left: 30px;
+    font-size: 19px;
+    padding-bottom: 13px;
     &::placeholder{
       font-size: 19px;
       padding-left: 12px;
@@ -460,7 +517,7 @@ $tiffany-color:#63d1bb;
     margin-right: auto;
   }
   .order-form__fieldset-contacts-wrapper{
-    padding-top: 54px;
+    padding-top: 52px;
     max-width: 100%;
   }
   .order-form__fieldset--textarea{
@@ -471,8 +528,12 @@ $tiffany-color:#63d1bb;
     margin-right: auto;
   }
   .order-form__textarea{
-    margin-left: 35px;
-    width: 87%;
+    margin-left: 32px;
+    width: 81%;
     height: 135px;
+    font-size: 19px;
+  }
+  .order-form__legend--add{
+    padding-top: 20px;
   }
   }
