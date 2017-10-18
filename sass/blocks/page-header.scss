@@ -37,5 +37,10 @@
     font-size: 53px;
     line-height: 57px;
     padding-top: 90px;
+    padding-left: 0;
+    &::after{
+    height: 34px;
+    background-size: 1150px 34px;
+    }
   }
 }

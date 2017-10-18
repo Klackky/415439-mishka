@@ -30,7 +30,9 @@
 .popup__checkbox{
   display: none;
 }
-
+.popup__wrapper--show{
+  display: block;
+}
 .popup__sizes{
   display: flex;
   margin-left: 22%;

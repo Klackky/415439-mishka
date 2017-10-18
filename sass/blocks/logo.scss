@@ -21,11 +21,10 @@ and (min-width: 768px){
     margin: 0px;
     border: none;
     text-align: left;
-    width: 50%;
+    width: 48%;
     padding-top: 22px;
   }
   .logo__image{
-    margin-left: 50px;
     display: flex;
     justify-content: center;
   }
@@ -38,8 +37,8 @@ and (min-width: 768px){
    width: 19%;
    border: none;
    padding-left: 30px;
-   padding-right: 14px;
    padding-top: 10px;
+   padding-bottom: 0;
  }
  .logo__image{
    margin: 0px;

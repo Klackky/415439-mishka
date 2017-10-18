@@ -28,7 +28,7 @@
   padding-left: 0px;
   padding-right: 0px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 .button--add{
   background-color:#63d1bb;
@@ -52,7 +52,7 @@
     width: 170px;
     position: absolute;
     bottom: 322px;
-    right: 32px;
+    right: 0;
     padding-left: 0px;
     padding-right: 0px;
     text-align: center;
@@ -61,8 +61,7 @@
     width: 225px;
     padding-right: 0px;
     padding-left: 0px;
-    margin-left: 36%;
-    margin-bottom: 35px;
+    margin-bottom: 55px;
   }
   .button--make-order{
     order: 4;
@@ -86,14 +85,15 @@
     margin: -50px 0px 0px 175px;
     padding-bottom: 0px;
     height: 35px;
+    position: relative;
   }
   .button--order-promo{
     width: 290px;
-    margin-left: 6px;
+    height: 16px;
   }
   .button--write-review{
     bottom:325px;
-    right: -16px;
+    right: 0;
   }
   .button--make-order{
     width: 224px;

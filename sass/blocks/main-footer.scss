@@ -31,20 +31,29 @@
 @media (min-width: 768px){
   .main-footer__wrapper{
     display: flex;
-    padding-top: 50px;
+    padding-top: 35px;
     justify-content: space-between;
-    padding-left: 50px;
+    max-width: 668px;
     padding-bottom: 50px;
   }
   .main-footer__logo{
     display: block;
     padding-top: 10px;
+    width: 27%;
   }
   .main-footer__developed-by-container{
     padding: 0px;
     margin: 0px;
     border: none;
-    margin-right: 7px;
     padding-top: 10px;
+    width: 27%;
+  }
+}
+@media (min-width:1150px){
+  .main-footer__wrapper{
+    max-width: 1050px;
+  }
+  .main-footer__developed-by-container{
+    justify-content: flex-end;
   }
 }

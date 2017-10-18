@@ -1,5 +1,9 @@
 $standart-border: 1px solid #ececec;
-
+.weekly-promo{
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .weekly-promo__wrapper{
   padding-left:30px;
   padding-right: 30px;
@@ -8,8 +12,8 @@ $standart-border: 1px solid #ececec;
   font-size:25px;
   line-height:30px;
   font-weight:bold;
- margin: 0px;
- padding-top: 25px;
+  margin: 0px;
+  padding-top: 25px;
 }
 .weekly-promo__subheader{
   text-transform: uppercase;
@@ -56,8 +60,14 @@ $standart-border: 1px solid #ececec;
   margin: 0px;
 }
 @media (min-width: 768px){
+  .weekly-promo{
+    max-width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .weekly-promo__wrapper{
-    padding-left: 50px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .weekly-promo__text{
     padding-top: 21px;
@@ -117,11 +127,14 @@ $standart-border: 1px solid #ececec;
   }
 }
 @media (min-width: 1150px){
+  .weekly-promo{
+    max-width: 1050px;
+  }
   .weekly-promo__header-container{
     flex-direction: row-reverse;
     justify-content: flex-end;
-    padding-left: 40px;
-    padding-top: 125px;
+    padding-left: 44px;
+    padding-top: 114px;
   }
   .weekly-promo__header{
     margin-left: 20px;
@@ -129,10 +142,15 @@ $standart-border: 1px solid #ececec;
   }
   .weekly-promo__text{
     padding-top: 23px;
+    padding-right: 8px;
   }
   .weekly-promo__image{
     margin-top: -120px;
-    margin-left: 30px;
+    margin-left: 37px;
+  }
+  .weekly-promo__price{
+    text-align: start;
+    padding-left: 75px;
   }
   .weekly-promo__description{
     margin-left: 175px;
@@ -140,7 +158,7 @@ $standart-border: 1px solid #ececec;
     flex: 0 0 30%;
   }
   .weekly-promo__order{
-    margin-left: 168px;
+    margin-left: 175px;
     width: 30%;
     flex: 0 0 30%;
     margin-top: -128px;
@@ -154,4 +172,10 @@ $standart-border: 1px solid #ececec;
   .weekly-promo__wrapper{
     padding: 0px;
   }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+/* IE10+ CSS styles go here */
+.weekly-promo__price{
+  padding-left: 0px;
+}
 }

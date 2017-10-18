@@ -22,10 +22,13 @@
 @media (min-width: 1150px){
   .page-content__wrapper{
     margin-top: 140px;
-    padding-left: 4.3%;
-    padding-right: 3%;
+    padding-left: 3.6%;
     max-width: 1050px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 106px;
+  }
+  .page-content__index-wrapper{
+    max-width: none;
   }
 }

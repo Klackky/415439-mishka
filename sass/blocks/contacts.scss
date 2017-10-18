@@ -3,6 +3,9 @@
   padding-right: 30px;
   padding-bottom: 23px;
   padding-top: 72px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contacts__header{
   font-size: 18px;
@@ -46,10 +49,13 @@
   color:#767676;
   padding-top: 11px;
 }
-
+.contacts__map-and-button-container{
+  padding-bottom: 36px;
+}
 .contacts__map{
-  padding-bottom: 42px;
   width: 100%;
+  height: 460px;
+  background-color: grey;
 }
 
 @media (min-width: 768px){
@@ -62,7 +68,7 @@
       height: 24px;
       background-image: url(../img/bg-zigzag-line.svg);
       position: absolute;
-      top: 30px;
+      top: 70px;
       background-repeat: repeat-x;
       background-size: 668px 22px;
     }
@@ -78,22 +84,26 @@
       height: 78px;
       background-image: url(../img/icon-flag.svg);
       position: absolute;
-      left: 622px;
+      right: 0;
       top: -12px;
       background-repeat: no-repeat;
     }
   }
   .contacts__wrapper{
     padding-top: 110px;
-    padding-left: 45px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 668px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
   }
   .contacts__email{
     padding-right: 22px;
+    white-space: nowrap;
   }
   .contacts__contact-info{
     display: flex;
-    padding-left: 5px;
     padding-right: 0px;
   }
   .contacts__email-container{
@@ -110,18 +120,18 @@
     margin-left: 55px;
   }
   .contacts__map-and-button-container{
-    padding-bottom: 12px;
+    padding-bottom: 50px;
     margin-top: 20px;
   }
 }
 @media (min-width: 1150px){
   .contacts__wrapper{
-    padding-left: 170px;
+    padding-left: 133px;
     padding-bottom: 0px;
   }
   .contacts__header{
     &::before{
-        left: -100px;
+        left: -108px;
         top: -12px;
     }
   }
@@ -130,6 +140,9 @@
     flex-wrap: wrap;
     padding-bottom: 100px;
     margin-top: 80px;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
     &::after{
     height: 44px;
     background-size: 1128px 42px;
@@ -139,6 +152,7 @@
   }
   .contacts__header{
     font-size: 53px;
+    margin-bottom: 38px;
   }
   .contacts__map-and-button-container{
     width:50%;
@@ -150,10 +164,12 @@
   }
   .contacts__contact-info{
     flex-direction: column;
+    padding-left: 4px;
   }
   .contacts__address-container{
     margin-left: 0;
     width: 100%;
+    margin-top: 11px;
   }
   .contacts__map{
     padding-bottom: 0px;

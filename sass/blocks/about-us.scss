@@ -11,7 +11,11 @@ $padding-bottom-for-items:15px;
   padding-right: 30px;
   padding-top: 45px;
 }
-
+.about-us{
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .about-us__header{
   @include header;
   margin-bottom: 30px;
@@ -89,6 +93,9 @@ $padding-bottom-for-items:15px;
 @media (min-width: 768px){
   .about-us{
     position: relative;
+    max-width: 668px;
+    margin-left: auto;
+    margin-right: auto;
     &::before{
       content: "";
       z-index: 8;
@@ -116,7 +123,8 @@ $padding-bottom-for-items:15px;
   }
   .about-us__wrapper{
     padding-top: 85px;
-    padding-left: 50px;
+    padding-left: 0;
+    padding-right: 0;
     position: relative;
   }
   .about-us__item--material{
@@ -137,6 +145,7 @@ $padding-bottom-for-items:15px;
   }
   .about-us__item--likes{
     order: 5;
+    padding-top: 8px;
   }
   .about-us__item--style{
     order: 3;
@@ -149,20 +158,26 @@ $padding-bottom-for-items:15px;
   }
 }
 @media (min-width: 1150px){
+  .about-us{
+    max-width: 1050px;
+  }
   .about-us__header{
     font-size: 53px;
   }
   .about-us__wrapper{
-    margin-left: 150px;
-    margin-right: 100px;
-    padding: 0px;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 172px;
+    padding-right: 16px;
     margin-top: 168px;
+    padding-top: 0;
   }
   .about-us{
     &::before{
-    top: -100px;
+    top: -106px;
     height: 44px;
-    background-size: 1128px 42px;
+    background-size: 1085px 42px;
     }
   }
   .about-us__list{
@@ -174,7 +189,7 @@ $padding-bottom-for-items:15px;
   .about-us__item--likes{
     &::before{
       padding-bottom: 18px;
-      padding-top: 63px;
+      padding-top: 53px;
     }
   }
   .about-us__item--giftwrap{

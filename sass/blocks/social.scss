@@ -6,22 +6,18 @@
 
 .social__link{
     text-decoration: none;
-    width: 50px;
+    width: 60px;
     height: 50px;
-    margin-left: 15px;
+    text-align: center;
 }
-.social__link--instagram{
-  margin-left: 25px;
-}
+
 .social__link--facebook{
   margin-top: -7px;
 }
-.social__link--twitter{
-  margin-left: 2px;
-}
+
 @media (min-width: 768px){
-  .social{
-    margin-left: 13%;
-    width: 300px;
-  }
+ .social{
+   width: 27%;
+   padding-top: 30px;
+ }
 }
