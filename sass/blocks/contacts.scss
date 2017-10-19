@@ -18,8 +18,9 @@
   color: #767676;
   display: flex;
   padding-top: 16px;
-  dd{
-    margin: 0px;
+
+  dd {
+    margin: 0;
     }
 }
 
@@ -28,13 +29,15 @@
 }
 
 .contacts__email-content {
-  margin: 0px;
+  margin: 0;
   text-decoration: none;
   color: #767676;
   border-bottom: 1px solid #63d1bb;
+
   &:hover {
     color: #46c1ae;
   }
+
   &:active {
     color: #46c1ae;
     opacity: 0.3;
@@ -63,12 +66,13 @@
 @media (min-width: 768px) {
   .contacts {
     position: relative;
+
     &::after {
       content: "";
       z-index: 8;
       width: 100%;
       height: 24px;
-      background-image: url(../img/bg-zigzag-line.svg);
+      background-image: url("../img/bg-zigzag-line.svg");
       position: absolute;
       top: 70px;
       background-repeat: repeat-x;
@@ -81,11 +85,12 @@
     line-height: 50px;
     position: relative;
     &::before {
+
       content: "";
       z-index: 8;
       width: 50px;
       height: 78px;
-      background-image: url(../img/icon-flag.svg);
+      background-image: url("../img/icon-flag.svg");
       position: absolute;
       right: 0;
       top: -12px;
@@ -110,11 +115,11 @@
 
   .contacts__contact-info {
     display: flex;
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   .contacts__email-container {
-    padding-top: 0px;
+    padding-top: 0;
     font-size: 17px;
   }
 
@@ -125,7 +130,7 @@
 
   .contacts__address-container {
     width: 50%;
-    padding-top: 0px;
+    padding-top: 0;
     margin-left: 55px;
   }
   .contacts__map-and-button-container {
@@ -137,7 +142,7 @@
 @media (min-width: 1150px) {
   .contacts__wrapper {
     padding-left: 133px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
   .contacts__header {
     &::before {
@@ -153,6 +158,7 @@
     max-width: 1050px;
     margin-left: auto;
     margin-right: auto;
+
     &::after {
     height: 44px;
     background-size: 1128px 42px;
@@ -167,7 +173,7 @@
 
   .contacts__map-and-button-container {
     width:50%;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     padding-top: 60px;
   }
 
@@ -187,6 +193,6 @@
   }
 
   .contacts__map {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 }

@@ -92,6 +92,7 @@ $padding-bottom-for-items: 15px;
     padding-bottom: $padding-bottom-for-items;
   }
 }
+
 @media (min-width: 768px) {
   .about-us {
     position: relative;
@@ -137,6 +138,7 @@ $padding-bottom-for-items: 15px;
 
   .about-us__item--handmade {
     order: 2;
+
     &::before {
       padding-top: 0;
     }
@@ -146,6 +148,7 @@ $padding-bottom-for-items: 15px;
     flex: 1 0 40%;
     font-size: 20px;
     line-height: 22px;
+
     &::before {
       padding-top: 55px;
     }
@@ -186,6 +189,7 @@ $padding-bottom-for-items: 15px;
 
   .about-us {
     max-width: 1050px;
+
     &::before {
       top: -106px;
       height: 44px;

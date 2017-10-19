@@ -13,10 +13,12 @@
   display: block;
   cursor: pointer;
   background-color: transparent;
+
   &:hover {
     background-color: #444444;
     color: #ffffff;
   }
+
   &:active {
     background-color: #444444;
     color: #757575;
@@ -25,8 +27,8 @@
 
 .button--write-us {
   width: 260px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
   margin: 0 auto;
   margin-bottom: 35px;
 }
@@ -55,23 +57,23 @@
     position: absolute;
     bottom: 322px;
     right: 0;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
     text-align: center;
   }
 
   .button--write-us {
     width: 225px;
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 0;
+    padding-left: 0;
     margin-bottom: 55px;
   }
 
   .button--make-order {
     order: 4;
     width: 580px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
     margin-left: 43px;
   }
 
@@ -90,7 +92,7 @@
 @media (min-width: 1150px) {
   .button--write-us {
     margin: -50px 0px 0px 175px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     height: 35px;
     position: relative;
   }
