@@ -9,6 +9,12 @@
     width: 60px;
     height: 50px;
     text-align: center;
+    &:hover{
+      fill:#5bc7b6;
+    }
+    &:active{
+      fill:#bde3dd;
+    }
 }
 
 .social__link--facebook{

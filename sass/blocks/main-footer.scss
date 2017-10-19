@@ -8,6 +8,12 @@
 }
 .main-footer__logo{
   display: none;
+  &:hover{
+    fill:#46c1ae;
+  }
+  &:active{
+    fill:#bde3dd;
+  }
 }
 .main-footer__developed-by-container{
   display: flex;
@@ -17,6 +23,17 @@
   width: 260px;
   margin: auto;
   border-top: 1px solid #e5e5e5;
+  cursor: pointer;
+  &:hover{
+    .main-footer__htmlacademy{
+      fill:#51c4b2;
+    }
+  }
+  &:active{
+    .main-footer__htmlacademy{
+      fill:#bde3dd;
+    }
+  }
 }
 .main-footer__developed-by{
   font-size: 19px;
@@ -27,6 +44,7 @@
 .main-footer__htmlacademy{
   padding-left: 30px;
   padding-top: 10px;
+  fill:#6cd3be;
 }
 @media (min-width: 768px){
   .main-footer__wrapper{

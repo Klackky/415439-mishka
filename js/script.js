@@ -1,18 +1,3 @@
-var link = document.querySelector (".button--order-promo");
-var popup = document.querySelector (".popup__wrapper");
-
-link.addEventListener("click", function(event) {
-event.preventDefault();
-popup.classList.add("popup__wrapper--show");
-
-window.addEventListener("keydown", function(event) {
- if (event.keyCode === 27) {
-   if (popup.classList.contains("popup__wrapper--show")) {
-     popup.classList.remove("popup__wrapper--show");
-   }
- }
-});
-});
 
 var toggle = document.querySelector (".main-nav__button");
 var dropdown = document.querySelector (".main-nav__dropdown");
@@ -45,6 +30,8 @@ toggle.addEventListener("click", function() {
   }
 });
 
+
+
 function initMap() {
         var uluru = {lat: 59.938794, lng: 30.323083};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -58,3 +45,19 @@ function initMap() {
         });
 
       }
+
+      var link = document.querySelector (".button--order-promo");
+      var popup = document.querySelector (".popup__wrapper");
+
+      link.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.add("popup__wrapper--show");
+
+      window.addEventListener("keydown", function(event) {
+       if (event.keyCode === 27) {
+         if (popup.classList.contains("popup__wrapper--show")) {
+           popup.classList.remove("popup__wrapper--show");
+         }
+       }
+      });
+      });
