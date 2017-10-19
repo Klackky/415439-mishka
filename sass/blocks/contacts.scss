@@ -1,4 +1,4 @@
-.contacts__wrapper{
+.contacts__wrapper {
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 23px;
@@ -7,61 +7,63 @@
   margin-left: auto;
   margin-right: auto;
 }
-.contacts__header{
+
+.contacts__header {
   font-size: 18px;
 }
-.contacts__email-container{
-  font-size:15px;
+
+.contacts__email-container {
+  font-size: 15px;
   line-height: 30px;
-  color:#767676;
+  color: #767676;
   display: flex;
   padding-top: 16px;
   dd{
-    margin:0px;
+    margin: 0px;
     }
 }
 
-.contacts__email{
+.contacts__email {
   padding-right: 32px;
 }
 
-.contacts__email-content{
-  margin:0px;
-  text-decoration:none;
-  color:#767676;
+.contacts__email-content {
+  margin: 0px;
+  text-decoration: none;
+  color: #767676;
   border-bottom: 1px solid #63d1bb;
-  &:hover{
+  &:hover {
     color: #46c1ae;
   }
-  &:active{
-    color:#46c1ae;
+  &:active {
+    color: #46c1ae;
     opacity: 0.3;
   }
 }
 
-.contacts__address-content{
+.contacts__address-content {
   margin-left: 30px;
 }
-.contacts__address-container{
-  font-size:15px;
+.contacts__address-container {
+  font-size: 15px;
   line-height: 30px;
   display: flex;
-  color:#767676;
+  color: #767676;
   padding-top: 11px;
 }
-.contacts__map-and-button-container{
+.contacts__map-and-button-container {
   padding-bottom: 36px;
 }
-.contacts__map{
+.contacts__map {
   width: 100%;
   height: 460px;
   background-color: grey;
 }
 
-@media (min-width: 768px){
-  .contacts{
+@media (min-width: 768px) {
+  .contacts {
     position: relative;
-    &::after{
+    &::after {
       content: "";
       z-index: 8;
       width: 100%;
@@ -73,11 +75,12 @@
       background-size: 668px 22px;
     }
   }
-  .contacts__header{
+
+  .contacts__header {
     font-size: 43px;
     line-height: 50px;
     position: relative;
-    &::before{
+    &::before {
       content: "";
       z-index: 8;
       width: 50px;
@@ -89,7 +92,8 @@
       background-repeat: no-repeat;
     }
   }
-  .contacts__wrapper{
+
+  .contacts__wrapper {
     padding-top: 110px;
     padding-left: 0;
     padding-right: 0;
@@ -98,44 +102,50 @@
     margin-right: auto;
     position: relative;
   }
-  .contacts__email{
+
+  .contacts__email {
     padding-right: 22px;
     white-space: nowrap;
   }
-  .contacts__contact-info{
+
+  .contacts__contact-info {
     display: flex;
     padding-right: 0px;
   }
-  .contacts__email-container{
+
+  .contacts__email-container {
     padding-top: 0px;
     font-size: 17px;
   }
-  .contacts__address-content{
+
+  .contacts__address-content {
     margin-left: 31px;
     font-size: 17px;
   }
-  .contacts__address-container{
+
+  .contacts__address-container {
     width: 50%;
     padding-top: 0px;
     margin-left: 55px;
   }
-  .contacts__map-and-button-container{
+  .contacts__map-and-button-container {
     padding-bottom: 50px;
     margin-top: 20px;
   }
 }
-@media (min-width: 1150px){
-  .contacts__wrapper{
+
+@media (min-width: 1150px) {
+  .contacts__wrapper {
     padding-left: 133px;
     padding-bottom: 0px;
   }
-  .contacts__header{
-    &::before{
+  .contacts__header {
+    &::before {
         left: -108px;
         top: -12px;
     }
   }
-  .contacts{
+  .contacts {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 100px;
@@ -143,35 +153,40 @@
     max-width: 1050px;
     margin-left: auto;
     margin-right: auto;
-    &::after{
+    &::after {
     height: 44px;
     background-size: 1128px 42px;
     top:-24px;
     left: 0;
     }
   }
-  .contacts__header{
+  .contacts__header {
     font-size: 53px;
     margin-bottom: 38px;
   }
-  .contacts__map-and-button-container{
+
+  .contacts__map-and-button-container {
     width:50%;
     padding-bottom: 0px;
     padding-top: 60px;
   }
-  .contacts__wrapper{
+
+  .contacts__wrapper {
     width: 30%;
   }
-  .contacts__contact-info{
+
+  .contacts__contact-info {
     flex-direction: column;
     padding-left: 4px;
   }
-  .contacts__address-container{
+
+  .contacts__address-container {
     margin-left: 0;
     width: 100%;
     margin-top: 11px;
   }
-  .contacts__map{
+
+  .contacts__map {
     padding-bottom: 0px;
   }
 }

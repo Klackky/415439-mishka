@@ -1,26 +1,29 @@
-.page-content__wrapper{
+.page-content__wrapper {
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 55px;
   margin-top: 35px;
 }
 
-@media (min-width: 768px){
-  .page-content__wrapper-form{
+@media (min-width: 768px) {
+  .page-content__wrapper-form {
     padding: 0px;
   }
-  .page-content__wrapper{
+
+  .page-content__wrapper {
     padding-left: 6.5%;
     padding-right: 4.4%;
   }
-  .page-content__index-wrapper{
+
+  .page-content__index-wrapper {
     max-width: 1050px;
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media (min-width: 1150px){
-  .page-content__wrapper{
+
+@media (min-width: 1150px) {
+  .page-content__wrapper {
     margin-top: 140px;
     padding-left: 3.6%;
     max-width: 1050px;
@@ -28,7 +31,8 @@
     margin-right: auto;
     padding-bottom: 106px;
   }
-  .page-content__index-wrapper{
+
+  .page-content__index-wrapper {
     max-width: none;
   }
 }

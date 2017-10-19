@@ -3,21 +3,15 @@
   margin-bottom: 20px;
 
   &:hover {
-    box-shadow: 0 6px 5px -1px rgba(0,0,0,0.30);
+    box-shadow: 0 6px 5px -1px rgba(0, 0, 0, 0.30);
   }
 
   &:active {
-    box-shadow: 0 4px 3px -1px rgba(0,0,0,0.20);
+    box-shadow: 0 4px 3px -1px rgba(0, 0, 0, 0.20);
   }
 }
 
 .item__container {
-  max-width: 260px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.item__process {
   max-width: 260px;
   margin-left: auto;
   margin-right: auto;
@@ -97,13 +91,14 @@
   display: flex;
   flex-direction: column;
   position: relative;
-
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
   &:hover {
-    box-shadow: 0 6px 5px -1px rgba(0,0,0,0.30);
+    box-shadow: 0 6px 5px -1px rgba(0, 0, 0, 0.30);
   }
-
   &:active {
-    box-shadow: 0 4px 3px -1px rgba(0,0,0,0.20);
+    box-shadow: 0 4px 3px -1px rgba(0, 0, 0, 0.20);
   }
 }
 

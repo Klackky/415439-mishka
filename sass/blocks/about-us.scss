@@ -118,10 +118,6 @@ $padding-bottom-for-items: 15px;
     margin-top: 6px;
   }
 
-  .about-us__item {
-    flex: 1 0 40%;
-  }
-
   .about-us__header {
     font-size: 43px;
     margin-bottom: 0;
@@ -141,16 +137,15 @@ $padding-bottom-for-items: 15px;
 
   .about-us__item--handmade {
     order: 2;
-
     &::before {
       padding-top: 0;
     }
   }
 
   .about-us__item {
+    flex: 1 0 40%;
     font-size: 20px;
     line-height: 22px;
-
     &::before {
       padding-top: 55px;
     }
@@ -173,11 +168,8 @@ $padding-bottom-for-items: 15px;
     order: 6;
   }
 }
-@media (min-width: 1150px) {
-  .about-us {
-    max-width: 1050px;
-  }
 
+@media (min-width: 1150px) {
   .about-us__header {
     font-size: 53px;
   }
@@ -193,6 +185,7 @@ $padding-bottom-for-items: 15px;
   }
 
   .about-us {
+    max-width: 1050px;
     &::before {
       top: -106px;
       height: 44px;

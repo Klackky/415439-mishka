@@ -1,4 +1,5 @@
 $tiffany-color: #63d1bb;
+
 @mixin standart-placeholder {
   font-size: 17px;
   line-height: 18px;
@@ -81,21 +82,19 @@ $tiffany-color: #63d1bb;
     border-radius: 50%;
     border: 2px solid #444444;
   }
-
-  &:hover {
+  &::hover {
     &:before {
       border-color: #62d1ba;
     }
   }
-
-  &:active {
+  &::active {
     &:before {
       border-color: #d7d7d7;
     }
   }
 }
 
-.order-form__radio:checked+label::after {
+.order-form__radio:checked + label::after {
   position: absolute;
   content: "";
   width: 16px;
@@ -133,14 +132,12 @@ $tiffany-color: #63d1bb;
     top: -5px;
     border: 2px solid #444444;
   }
-
-  &:hover {
+  &::hover {
     &:before {
       border-color: #62d1ba;
     }
   }
-
-  &:active {
+  &::active {
     &:before {
       border-color: #d7d7d7;
     }
@@ -183,11 +180,11 @@ $tiffany-color: #63d1bb;
     @include standart-placeholder;
   }
 
-  &:hover {
+  &::hover {
     border-color: #62d1ba;
   }
 
-  &:active {
+  &::active {
     border-color: #62d1ba;
   }
 }
@@ -398,7 +395,7 @@ $tiffany-color: #63d1bb;
     padding-left: 64px;
   }
 
-  .order-form__radio:checked+label::after {
+  .order-form__radio:checked + label::after {
     top: 6px;
     left: -2px;
     width: 22px;
@@ -609,6 +606,7 @@ $tiffany-color: #63d1bb;
   .order-form__legend--add {
     padding-top: 20px;
   }
+
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .order-form__ckeckbox-wrapper {
       margin-left: 120px;

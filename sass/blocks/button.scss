@@ -1,4 +1,4 @@
-.button{
+.button {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 17px;
@@ -13,32 +13,33 @@
   display: block;
   cursor: pointer;
   background-color: transparent;
-  &:hover{
-    background-color:#444444;
-    color:#ffffff;
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
   }
-  &:active{
-    background-color:#444444;
-    color:#757575;
+  &:active {
+    background-color: #444444;
+    color: #757575;
   }
 }
 
-.button--write-us{
+.button--write-us {
   width: 260px;
   padding-left: 0px;
   padding-right: 0px;
   margin: 0 auto;
   margin-bottom: 35px;
 }
-.button--add{
-  background-color:#63d1bb;
+
+.button--add {
+  background-color: #63d1bb;
   border: none;
-  color:white;
+  color: white;
   margin-left: auto;
   margin-right: auto;
 }
 
-.button--make-order{
+.button--make-order {
   margin-bottom: 30px;
   margin-top: -20px;
   width: 190px;
@@ -47,8 +48,9 @@
   margin-top: -20px;
   order: 4;
 }
-@media (min-width: 768px){
-  .button--write-review{
+
+@media (min-width: 768px) {
+  .button--write-review {
     width: 170px;
     position: absolute;
     bottom: 322px;
@@ -57,45 +59,52 @@
     padding-right: 0px;
     text-align: center;
   }
-  .button--write-us{
+
+  .button--write-us {
     width: 225px;
     padding-right: 0px;
     padding-left: 0px;
     margin-bottom: 55px;
   }
-  .button--make-order{
+
+  .button--make-order {
     order: 4;
     width: 580px;
     padding-left: 0px;
     padding-right: 0px;
     margin-left: 43px;
   }
-.button--order-promo{
+
+  .button--order-promo {
   width: 285px;
-}
-  .button--send-order{
+  }
+
+  .button--send-order {
     width: 228px;
     padding-left: 0;
     padding-right: 0;
     height: 51px;
   }
-}
-@media (min-width: 1150px){
-  .button--write-us{
+ }
+@media (min-width: 1150px) {
+  .button--write-us {
     margin: -50px 0px 0px 175px;
     padding-bottom: 0px;
     height: 35px;
     position: relative;
   }
-  .button--order-promo{
+
+  .button--order-promo {
     width: 290px;
     height: 16px;
   }
-  .button--write-review{
-    bottom:325px;
+
+  .button--write-review {
+    bottom: 325px;
     right: 0;
   }
-  .button--make-order{
+
+  .button--make-order {
     width: 224px;
     padding-left: 0;
     padding-right: 0;
