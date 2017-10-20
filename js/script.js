@@ -60,3 +60,19 @@ link.addEventListener("click", function(event) {
     }
   });
 });
+
+var order = document.querySelector(".item__icon-cart");
+var modal = document.querySelector(".popup__wrapper");
+
+order.addEventListener("click", function(event) {
+  event.preventDefault();
+  modal.classList.add("popup__wrapper--show");
+
+  window.addEventListener("keydown", function(event) {
+    if (event.keyCode === 27) {
+      if (modal.classList.contains("popup__wrapper--show")) {
+        modal.classList.remove("popup__wrapper--show");
+      }
+    }
+  });
+});

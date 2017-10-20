@@ -67,6 +67,7 @@ $nav-border: 1px solid #ececec;
   padding-left: 75px;
   display: block;
   border-bottom: $nav-border;
+  position: relative;
 
   &:active {
     color: #ffffff;
@@ -200,6 +201,7 @@ $nav-border: 1px solid #ececec;
     padding-top: 35px;
     border-bottom: 0;
     height: 40px;
+    max-width: none;
   }
 
   .main-nav__item--delivery {
@@ -233,6 +235,7 @@ $nav-border: 1px solid #ececec;
 
   .main-nav__item {
     color: #000000;
+    max-width: none;
 
     &:active {
       color: #b2b2b2;
