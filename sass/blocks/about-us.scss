@@ -1,22 +1,29 @@
 @mixin header {
-  font-size:25px;
-  line-height:30px;
-  font-weight:bold;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
 }
-$padding-top-for-items:35px;
-$padding-bottom-for-items:15px;
+$padding-top-for-items: 35px;
+$padding-bottom-for-items: 15px;
 
-.about-us__wrapper{
+.about-us__wrapper {
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 34px;
+  padding-top: 45px;
 }
 
-.about-us__header{
+.about-us {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-us__header {
   @include header;
+  margin-bottom: 30px;
 }
 
-.about-us__item{
+.about-us__item {
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
@@ -24,77 +31,190 @@ $padding-bottom-for-items:15px;
   list-style: none;
 }
 
-.about-us__list{
-  padding-left:0px;
+.about-us__list {
+  padding-left: 0;
 }
 
-.about-us__item--material{
-  &::before{
-    content:url(../img/icon-feature-flower.svg);
+.about-us__item--material {
+  &::before {
+    content: url("../img/icon-feature-flower.svg");
     display: block;
-    padding-bottom:$padding-bottom-for-items;
+    padding-bottom: $padding-bottom-for-items;
+    padding-left: 8px;
   }
 }
 
-.about-us__item--style{
-  &::before{
-    content:url(../img/icon-feature-money.svg);
+.about-us__item--style {
+  &::before {
+    content: url("../img/icon-feature-money.svg");
     display: block;
-    padding-top: $padding-top-for-items;
-    padding-bottom:$padding-bottom-for-items;
+    padding-top: 31px;
+    padding-bottom: 22px;
   }
 }
 
-.about-us__item--likes{
-  &::before{
-    content:url(../img/icon-feature-heart.svg);
-    display: block;
-    padding-top: $padding-top-for-items;
-    padding-bottom:$padding-bottom-for-items;
-  }
-}
-
-.about-us__item--handmade{
-  &::before{
-    content:url(../img/icon-feature-ball.svg);
+.about-us__item--likes {
+  &::before {
+    content: url("../img/icon-feature-heart.svg");
     display: block;
     padding-top: $padding-top-for-items;
-    padding-bottom:$padding-bottom-for-items;
+    padding-bottom: $padding-bottom-for-items;
+    padding-left: 8px;
   }
 }
 
-.about-us__item--producer{
-  &::before{
-    content:url(../img/icon-feature-rocket.svg);
+.about-us__item--handmade {
+  &::before {
+    content: url("../img/icon-feature-ball.svg");
     display: block;
-    padding-top: $padding-top-for-items;
-    padding-bottom:$padding-bottom-for-items;
+    padding-top: 31px;
+    padding-bottom: 15px;
+    padding-left: 5px;
   }
 }
 
-.about-us__item--giftwrap{
-  &::before{
-    content:url(../img/icon-feature-gift.svg);
+.about-us__item--producer {
+  &::before {
+    content: url("../img/icon-feature-rocket.svg");
     display: block;
-    padding-top: $padding-top-for-items;
-    padding-bottom:$padding-bottom-for-items;
+    padding-top: 32px;
+    padding-bottom: 24px;
+    margin-left: -5px;
   }
 }
-@media (min-width: 768px){
-  .about-us__list{
+
+.about-us__item--giftwrap {
+  &::before {
+    content: url("../img/icon-feature-gift.svg");
+    display: block;
+    padding-top: 30px;
+    padding-left: 4px;
+    padding-bottom: $padding-bottom-for-items;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    position: relative;
+    max-width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::before {
+      content: "";
+      z-index: 8;
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-line.svg");
+      position: absolute;
+      top: 40px;
+      background-repeat: repeat-x;
+      background-size: 668px 22px;
+    }
+  }
+
+  .about-us__list {
     display: flex;
     flex-flow: row wrap;
+    margin-top: 6px;
   }
-  .about-us__item{
-    flex: 1 0 49%;
+
+  .about-us__header {
+    font-size: 43px;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .about-us__wrapper {
+    padding-top: 85px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+  }
+
+  .about-us__item--material {
+    order: 1;
+  }
+
+  .about-us__item--handmade {
+    order: 2;
+
+    &::before {
+      padding-top: 0;
+    }
+  }
+
+  .about-us__item {
+    flex: 1 0 40%;
+    font-size: 20px;
+    line-height: 22px;
+
+    &::before {
+      padding-top: 55px;
+    }
+  }
+
+  .about-us__item--likes {
+    order: 5;
+    padding-top: 8px;
+  }
+
+  .about-us__item--style {
+    order: 3;
+  }
+
+  .about-us__item--producer {
+    order: 4;
+  }
+
+  .about-us__item--giftwrap {
+    order: 6;
   }
 }
-@media (min-width: 1150px){
-  .about-us__header{
+
+@media (min-width: 1150px) {
+  .about-us__header {
     font-size: 53px;
   }
-  .about-us__wrapper{
-    margin-left: 180px;
-    padding: 0px;
+
+  .about-us__wrapper {
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 172px;
+    padding-right: 16px;
+    margin-top: 168px;
+    padding-top: 0;
+  }
+
+  .about-us {
+    max-width: 1050px;
+
+    &::before {
+      top: -106px;
+      height: 44px;
+      background-size: 1085px 42px;
+    }
+  }
+
+  .about-us__list {
+    margin-left: 4px;
+  }
+
+  .about-us__item {
+    flex: 0 0 41%;
+  }
+
+  .about-us__item--likes {
+    &::before {
+      padding-bottom: 18px;
+      padding-top: 53px;
+    }
+  }
+
+  .about-us__item--giftwrap {
+    &::before {
+      padding-top: 60px;
+    }
   }
 }

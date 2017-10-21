@@ -1,29 +1,50 @@
 $nav-border: 1px solid #ececec;
-.logo{
-  border-bottom: $nav-border;
+
+.logo {
   padding-top: 19px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+  width: 90px;
+  margin: auto;
   display: flex;
-  justify-content: center;
 }
 
-@media only screen
-and (min-width: 768px){
-  .logo{
-    order: 1;
-    width: 38%;
-    margin: 0px;
-    padding-left: 6%;
+.logo__image {
+  &:hover {
+    opacity: 0.4;
+  }
+
+  &:active {
+    opacity: 0.2;
   }
 }
-@media (min-width: 1150px){
- .logo{
-   order:2;
-   flex: 1 0 20%;
-   display: flex;
-   justify-content: center;
-   width: 20%;
-   border: none;
-   padding-left: 0px;
- }
+@media only screen and (min-width: 768px) {
+  .logo {
+    order: 1;
+    margin: 0;
+    border: none;
+    text-align: left;
+    width: 48%;
+    padding-top: 22px;
+  }
+
+  .logo__image {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 1150px) {
+  .logo {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    width: 19%;
+    border: none;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+
+  .logo__image {
+    margin: 0;
+  }
 }
