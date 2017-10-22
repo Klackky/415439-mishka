@@ -153,9 +153,10 @@
   .contacts__header {
     font-size: 53px;
     margin-bottom: 38px;
-      &::before {
-        left: -108px;
-        top: -12px;
+
+    &::before {
+      left: -108px;
+      top: -12px;
     }
   }
 
@@ -171,7 +172,7 @@
     &::after {
       height: 44px;
       background-size: 1128px 42px;
-      top:-24px;
+      top: -24px;
       left: 0;
     }
   }

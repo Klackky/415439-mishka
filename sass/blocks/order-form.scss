@@ -84,15 +84,13 @@ $tiffany-color: #63d1bb;
   }
 
   &:hover {
-
-    &:before {
+    &::before {
       border-color: #62d1ba;
     }
   }
 
   &:active {
-
-    &:before {
+    &::before {
       border-color: #d7d7d7;
     }
   }
@@ -138,14 +136,12 @@ $tiffany-color: #63d1bb;
   }
 
     &:hover {
-
       &::before {
         border-color: #62d1ba;
       }
     }
 
     &:active {
-
       &::before {
         border-color: #d7d7d7;
       }
@@ -320,6 +316,10 @@ $tiffany-color: #63d1bb;
   }
 
   .order-form__label {
+    padding-top: 10px;
+    padding-left: 22px;
+    font-size: 19px;
+
     &::before {
       width: 50px;
       height: 50px;
@@ -340,18 +340,15 @@ $tiffany-color: #63d1bb;
   }
 
   .order-form__label-radio {
+    font-size: 19px;
+    padding-left: 64px;
+
     &::before {
       width: 48px;
       height: 48px;
       left: -17px;
       top: -9px;
     }
-  }
-
-  .order-form__label {
-    padding-top: 10px;
-    padding-left: 22px;
-    font-size: 19px;
   }
 
   .order-form__checkbox-content {
@@ -379,6 +376,7 @@ $tiffany-color: #63d1bb;
 
   .order-form__label-name {
     margin-right: 25px;
+    font-size: 19px;
   }
 
   .order-form__input-contacts-content {
@@ -400,11 +398,6 @@ $tiffany-color: #63d1bb;
     }
   }
 
-  .order-form__label-radio {
-    font-size: 19px;
-    padding-left: 64px;
-  }
-
   .order-form__radio:checked + label::after {
     top: 6px;
     left: -2px;
@@ -416,10 +409,6 @@ $tiffany-color: #63d1bb;
     padding-top: 60px;
     padding-right: 30px;
     padding-bottom: 26px;
-  }
-
-  .order-form__label-name {
-    font-size: 19px;
   }
 
   .order-form__send-order {
@@ -476,7 +465,7 @@ $tiffany-color: #63d1bb;
   }
 }
 
-@media (min-width:1150px) {
+@media (min-width: 1150px) {
   .order-form__fieldset {
     padding-left: 120px;
     padding-right: 205px;
@@ -585,7 +574,6 @@ $tiffany-color: #63d1bb;
   }
 
   .order-form__input-contacts-content {
-    margin-left: 0;
     max-width: 850px;
     margin-left: auto;
     margin-right: auto;
@@ -615,9 +603,9 @@ $tiffany-color: #63d1bb;
     padding-top: 20px;
   }
 
-@media all and (-ms-high-contrast:none), (-ms-high-contrast:active) {
-  .order-form__ckeckbox-wrapper {
-    margin-left: 120px;
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .order-form__ckeckbox-wrapper {
+      margin-left: 120px;
   }
 }
 }

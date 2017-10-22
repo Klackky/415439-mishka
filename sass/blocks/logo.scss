@@ -18,7 +18,7 @@ $nav-border: 1px solid #ececec;
   }
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
   .logo {
     order: 1;
     margin: 0;
@@ -34,7 +34,7 @@ $nav-border: 1px solid #ececec;
   }
 }
 
-@media (min-width:1150px) {
+@media (min-width: 1150px) {
   .logo {
     order: 2;
     display: flex;
