@@ -1,12 +1,16 @@
 .popup__wrapper {
   padding-bottom: 45px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
   background-color: white;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 0 2px 0 rgba(50, 50, 50, 0.75);
-  min-width: 320px;
+  width: 260px;
+  height: 306px;
   display: none;
   z-index: 100;
 }
@@ -15,9 +19,12 @@
   padding-top: 36px;
   padding-bottom: 25px;
   text-transform: uppercase;
-  padding-left: 90px;
-  padding-right: 80px;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 53px;
+  padding-right: 53px;
+  text-align: center;
 }
 
 .popup__pick-size {
@@ -37,16 +44,18 @@
 
 .popup__sizes {
   display: flex;
-  margin-left: 22%;
-  margin-right: 22%;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
 
   input[type="checkbox"]:checked + label::before {
     content: "";
     position: absolute;
     top: -15px;
-    left: -40px;
-    width: 80px;
+    left: -35px;
+    width: 78px;
     height: 50px;
     border: 2px solid #56c3b2;
   }
@@ -55,8 +64,8 @@
     content: "";
     position: absolute;
     top: -15px;
-    left: -40px;
-    width: 80px;
+    left: -35px;
+    width: 78px;
     height: 50px;
     border: 2px solid #ececec;
   }
@@ -69,11 +78,42 @@
 }
 
 .popup__label {
-  margin-left: 65px;
   position: relative;
 }
 
 .popup__label--small {
   margin-right: 7px;
   margin-left: 0;
+}
+
+@media (min-width: 768px){
+  .popup__wrapper{
+    width: 350px;
+    height: 290px;
+    padding-top: 34px;
+    padding-right: 108px;
+    padding-left: 108px;
+    border: 1px solid #c7c7c7;
+  }
+
+  .popup__header{
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 29px;
+  }
+
+  .popup__sizes{
+    width: 250px;
+
+    input[type="checkbox"]:checked + label::before {
+      content: "";
+      width: 108px;
+      left: -47px;
+    }
+
+    input[type="checkbox"]:not(:checked) + label::before {
+      width: 108px;
+      left: -47px;
+    }
+  }
 }
