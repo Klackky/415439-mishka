@@ -87,8 +87,8 @@
     font-size: 43px;
     line-height: 50px;
     position: relative;
-    &::before {
 
+    &::before {
       content: "";
       z-index: 8;
       width: 50px;
@@ -136,6 +136,7 @@
     padding-top: 0;
     margin-left: 55px;
   }
+
   .contacts__map-and-button-container {
     padding-bottom: 50px;
     margin-top: 20px;

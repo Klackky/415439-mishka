@@ -1,14 +1,14 @@
 .item {
-    border: 1px solid #ededed;
-    margin-bottom: 20px;
+  border: 1px solid #ededed;
+  margin-bottom: 20px;
 
-    &:hover {
-        box-shadow: 0 6px 5px -1px rgba(0,0,0,0.30);
-    }
+  &:hover {
+    box-shadow: 0 6px 5px -1px rgba(0, 0, 0, 0.30);
+  }
 
-    &:active {
-        box-shadow: 0 4px 3px -1px rgba(0,0,0,0.20);
-    }
+  &:active {
+    box-shadow: 0 4px 3px -1px rgba(0, 0, 0, 0.20);
+  }
 }
 
 .item__container {
