@@ -151,7 +151,9 @@
   }
 
   .contacts__header {
-    &::before {
+    font-size: 53px;
+    margin-bottom: 38px;
+      &::before {
         left: -108px;
         top: -12px;
     }
@@ -167,20 +169,15 @@
     margin-right: auto;
 
     &::after {
-    height: 44px;
-    background-size: 1128px 42px;
-    top:-24px;
-    left: 0;
+      height: 44px;
+      background-size: 1128px 42px;
+      top:-24px;
+      left: 0;
     }
   }
 
-  .contacts__header {
-    font-size: 53px;
-    margin-bottom: 38px;
-  }
-
   .contacts__map-and-button-container {
-    width:50%;
+    width: 50%;
     padding-bottom: 0;
     padding-top: 60px;
   }

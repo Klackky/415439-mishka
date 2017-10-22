@@ -42,7 +42,7 @@ $padding-bottom-for-items: 15px;
     display: block;
     padding-bottom: $padding-bottom-for-items;
     padding-left: 8px;
-    }
+  }
 }
 
 .about-us__item--style {
@@ -51,7 +51,7 @@ $padding-bottom-for-items: 15px;
     display: block;
     padding-top: 31px;
     padding-bottom: 22px;
-    }
+  }
 }
 
 .about-us__item--likes {
@@ -61,7 +61,7 @@ $padding-bottom-for-items: 15px;
     padding-top: $padding-top-for-items;
     padding-bottom: $padding-bottom-for-items;
     padding-left: 8px;
-    }
+  }
 }
 
 .about-us__item--handmade {
@@ -71,7 +71,7 @@ $padding-bottom-for-items: 15px;
     padding-top: 31px;
     padding-bottom: 15px;
     padding-left: 5px;
-    }
+  }
 }
 
 .about-us__item--producer {
@@ -81,7 +81,7 @@ $padding-bottom-for-items: 15px;
     padding-top: 32px;
     padding-bottom: 24px;
     margin-left: -5px;
-    }
+  }
 }
 
 .about-us__item--giftwrap {
@@ -91,10 +91,10 @@ $padding-bottom-for-items: 15px;
     padding-top: 30px;
     padding-left: 4px;
     padding-bottom: $padding-bottom-for-items;
-    }
+  }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .about-us {
     position: relative;
     max-width: 668px;
@@ -140,7 +140,7 @@ $padding-bottom-for-items: 15px;
   .about-us__item--handmade {
     order: 2;
 
-      &::before {
+    &::before {
       padding-top: 0;
     }
   }
@@ -173,7 +173,7 @@ $padding-bottom-for-items: 15px;
   }
 }
 
-@media (min-width:1150px) {
+@media (min-width: 1150px) {
   .about-us__header {
     font-size: 53px;
   }
@@ -190,10 +190,11 @@ $padding-bottom-for-items: 15px;
 
   .about-us {
     max-width: 1050px;
+
     &::before {
-    top: -106px;
-    height: 44px;
-    background-size: 1085px 42px;
+      top: -106px;
+      height: 44px;
+      background-size: 1085px 42px;
     }
   }
 
@@ -207,14 +208,14 @@ $padding-bottom-for-items: 15px;
 
   .about-us__item--likes {
     &::before {
-    padding-bottom: 18px;
-    padding-top: 53px;
+      padding-bottom: 18px;
+      padding-top: 53px;
     }
   }
 
   .about-us__item--giftwrap {
     &::before {
-    padding-top: 60px;
+      padding-top: 60px;
     }
   }
 }

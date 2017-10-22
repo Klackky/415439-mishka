@@ -1,160 +1,160 @@
 .items-for-sale__container {
-    background: url("../img/items-for-sale.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    padding-top: 53px;
-    background-color: #f9f9f9;
+  background: url("../img/items-for-sale.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 53px;
+  background-color: #f9f9f9;
 }
 
 .items-for-sale__header {
-    font-size: 27px;
-    line-height: 30px;
-    font-weight: 700;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 280px;
-    margin-left: auto;
-    margin-right: auto;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .items-for-sale__item {
-    color: #ffffff;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    display: block;
-    text-decoration: none;
-    padding-left: 30px;
-    font-size: 19px;
-    line-height: 24px;
-    font-weight: bold;
-    position: relative;
-    padding-right: 185px;
+  color: #ffffff;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  display: block;
+  text-decoration: none;
+  padding-left: 30px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  position: relative;
+  padding-right: 185px;
 }
 
 .items-for-sale__item--interior {
-    background-color: #63d1bb;
-    background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
-    background-position: 87% 54%;
+  background-color: #63d1bb;
+  background-image: url("../img/icon-interior.svg");
+  background-repeat: no-repeat;
+  background-position: 87% 54%;
 }
 
 .items-for-sale__item--toys {
-    background-color: #56c3b2;
-    background-image: url("../img/icon-toy.svg");
-    background-repeat: no-repeat;
-    background-position: 90% 54%;
+  background-color: #56c3b2;
+  background-image: url("../img/icon-toy.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 54%;
 }
 
 .items-for-sale__item-container {
-    margin-top: 125px;
-    position: relative;
-    max-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 125px;
+  position: relative;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (min-width:768px) {
-    .items-for-sale {
-        background-color: #f9f9f9;
-    }
+@media (min-width: 768px) {
+  .items-for-sale {
+    background-color: #f9f9f9;
+  }
 
-    .items-for-sale__item-container {
-        display: flex;
-        margin-top: 370px;
-        max-width: 668px;
-        margin-left: auto;
-        margin-right: auto;
-        position: static;
+  .items-for-sale__item-container {
+    display: flex;
+    margin-top: 370px;
+    max-width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
 
-        &::after {
-            content: "";
-            z-index: 8;
-            width: 100%;
-            height: 24px;
-            background-image: url("../img/bg-zigzag-fill.svg");
-            position: absolute;
-            bottom: 0;
-            background-repeat: repeat-x;
-            background-size: 668px 30px;
-            left: 0;
-        }
+    &::after {
+      content: "";
+      z-index: 8;
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      position: absolute;
+      bottom: 0;
+      background-repeat: repeat-x;
+      background-size: 668px 30px;
+      left: 0;
     }
+  }
 
     .items-for-sale__item--interior {
         height: 70px;
         font-size: 20px;
     }
 
-    .items-for-sale__item--toys {
-        height: 70px;
-        font-size: 20px;
-    }
+  .items-for-sale__item--toys {
+    height: 70px;
+    font-size: 20px;
+  }
 
-    .items-for-sale__header {
-        font-size: 43px;
-        line-height: 50px;
-        margin-top: 100px;
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: none;
-    }
+  .items-for-sale__header {
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: none;
+  }
 
-    .items-for-sale__item {
-        width: 50%;
-        max-width: none;
+  .items-for-sale__item {
+    width: 50%;
+    max-width: none;
 
-        &:hover {
-            transform: translateY(-5px);
-        }
+    &:hover {
+      transform: translateY(-5px);
     }
+  }
 
-    .items-for-sale__container {
-        background: url("../img/hero-tablet@1x.jpg");
-        background-position: 50% 0;
-        background-repeat: no-repeat;
-        position: relative;
-    }
+  .items-for-sale__container {
+    background: url("../img/hero-tablet@1x.jpg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    position: relative;
+  }
 }
 
 @media (min-width:1150px) {
-    .items-for-sale__container {
-        background: url("../img/hero-desktop@1x.jpg");
-        background-position: 50% 50%;
-        margin-left: auto;
-        margin-right: auto;
-        width: 1050px;
-        background-repeat: no-repeat;
-        background-size: 120% 101%;
-        position: static;
-    }
+  .items-for-sale__container {
+    background: url("../img/hero-desktop@1x.jpg");
+    background-position: 50% 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1050px;
+    background-repeat: no-repeat;
+    background-size: 120% 101%;
+    position: static;
+  }
 
-    .items-for-sale {
-        position: relative;
-    }
+  .items-for-sale {
+    position: relative;
+}
 
-    .items-for-sale__item {
-        padding: 32px 100px 30px 36px;
-        background-position: 93% 54%;
-    }
+  .items-for-sale__item {
+    padding: 32px 100px 30px 36px;
+    background-position: 93% 54%;
+  }
 
-    .items-for-sale__header {
-        font-size: 53px;
-        line-height: 57px;
-        padding-left: 20px;
-    }
+  .items-for-sale__header {
+    font-size: 53px;
+    line-height: 57px;
+    padding-left: 20px;
+  }
 
-    .items-for-sale__item-container {
-        margin-top: 360px;
-        max-width: 1200px;
-        margin-left: 0;
-        margin-right: 0;
+  .items-for-sale__item-container {
+    margin-top: 360px;
+    max-width: 1200px;
+    margin-left: 0;
+    margin-right: 0;
 
-        &::after {
-            height: 34px;
-            background-size: 1139px 40px;
-        }
+    &::after {
+      height: 34px;
+      background-size: 1139px 40px;
     }
+  }
 }
