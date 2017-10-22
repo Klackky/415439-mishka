@@ -70,7 +70,7 @@ $nav-border: 1px solid #ececec;
   position: relative;
 
   &:active {
-    color: #ffffff;
+    opacity: 0.3;
   }
 
   &:hover {
@@ -229,7 +229,7 @@ $nav-border: 1px solid #ececec;
   }
 
   .main-nav__icon-cart {
-    left: 116px;
+    left: 30px;
     bottom: 35px;
   }
 
@@ -330,8 +330,8 @@ $nav-border: 1px solid #ececec;
 
   .main-nav__icon-cart {
     position: absolute;
-    top: 37px;
-    left: 117px;
+    top: 42px;
+    left: 34px;
   }
 
   .main-nav__menu-container {

@@ -82,12 +82,12 @@ $tiffany-color: #63d1bb;
     border-radius: 50%;
     border: 2px solid #444444;
   }
-  &::hover {
+  &:hover {
     &:before {
       border-color: #62d1ba;
     }
   }
-  &::active {
+  &:active {
     &:before {
       border-color: #d7d7d7;
     }
@@ -132,19 +132,19 @@ $tiffany-color: #63d1bb;
     top: -5px;
     border: 2px solid #444444;
   }
-  &::hover {
-    &:before {
+  &:hover {
+    &::before {
       border-color: #62d1ba;
     }
   }
-  &::active {
-    &:before {
+  &:active {
+    &::before {
       border-color: #d7d7d7;
     }
   }
 }
 
-.order-form__checkbox:checked+label::after {
+.order-form__checkbox:checked + label::after {
   position: absolute;
   width: 23px;
   height: 20px;
@@ -175,16 +175,18 @@ $tiffany-color: #63d1bb;
   border: none;
   padding-bottom: 16px;
   border-bottom: 2px solid black;
+  font-size: 17px;
+  line-height: 18px;
 
   &::placeholder {
-    @include standart-placeholder;
+    color: #c7c7c7;
   }
 
-  &::hover {
+  &:hover {
     border-color: #62d1ba;
   }
 
-  &::active {
+  &:active {
     border-color: #62d1ba;
   }
 }
@@ -228,12 +230,11 @@ $tiffany-color: #63d1bb;
   width: 100%;
   border: none;
   padding-bottom: 16px;
+  padding-left: 15px;
   border-bottom: 2px solid black;
   background-color: transparent;
-
-  &::placeholder {
-    @include standart-placeholder;
-  }
+  font-size: 17px;
+  line-height: 18px;
 
   &:hover {
     border-color: #62d1ba;
@@ -249,11 +250,11 @@ $tiffany-color: #63d1bb;
   outline: none;
   height: 130px;
   width: 95%;
+  padding-left: 15px;
+  padding-top: 10px;
 
   &::placeholder {
     @include standart-placeholder;
-    padding-left: 10px;
-    padding-top: 10px;
   }
 
   &:hover {
@@ -282,7 +283,7 @@ $tiffany-color: #63d1bb;
   opacity: 0.4;
   position: absolute;
   bottom: 10px;
-  right: 7px;
+  right: 30px;
 }
 @media (min-width: 768px) {
   .order-form__fieldset-wrapper {
@@ -434,10 +435,8 @@ $tiffany-color: #63d1bb;
   }
 
   .order-form__input-text {
-    &::placeholder {
-      font-size: 19px;
-      padding-left: 15px;
-    }
+    padding-left: 15px;
+    font-size: 19px;
   }
 
   .order-form__radio-wrapper {
@@ -568,7 +567,6 @@ $tiffany-color: #63d1bb;
 
     &::placeholder {
       font-size: 19px;
-      padding-left: 12px;
     }
   }
 
