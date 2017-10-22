@@ -164,6 +164,7 @@ $standart-border: 1px solid #ececec;
   .weekly-promo__header {
     margin-left: 20px;
     z-index: 5;
+    font-size: 53px;
   }
 
   .weekly-promo__text {
@@ -198,17 +199,12 @@ $standart-border: 1px solid #ececec;
     margin-top: 48px;
   }
 
-  .weekly-promo__header {
-    font-size: 53px;
-  }
-
   .weekly-promo__wrapper {
     padding: 0;
   }
 }
 
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .weekly-promo__price {
     padding-left: 0;
   }

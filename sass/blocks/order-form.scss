@@ -125,7 +125,7 @@ $tiffany-color: #63d1bb;
   position: relative;
   display: block;
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     width: 35px;
@@ -135,17 +135,17 @@ $tiffany-color: #63d1bb;
     border: 2px solid #444444;
   }
 
-    &:hover {
-      &::before {
-        border-color: #62d1ba;
-      }
+  &:hover {
+    &::before {
+      border-color: #62d1ba;
     }
+  }
 
-    &:active {
-      &::before {
-        border-color: #d7d7d7;
-      }
+  &:active {
+    &::before {
+      border-color: #d7d7d7;
     }
+  }
 }
 
 .order-form__checkbox:checked + label::after {
@@ -290,7 +290,7 @@ $tiffany-color: #63d1bb;
   right: 30px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .order-form__fieldset-wrapper {
     display: flex;
   }
@@ -606,6 +606,6 @@ $tiffany-color: #63d1bb;
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .order-form__ckeckbox-wrapper {
       margin-left: 120px;
+    }
   }
-}
 }

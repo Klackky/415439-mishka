@@ -359,7 +359,7 @@ $nav-border: 1px solid #ececec;
     padding-top: 18px;
   }
 
-  @media all and (-ms-high-contrast:none), (-ms-high-contrast:active) {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .main-nav__item--delivery {
       width: 23%;
     }
