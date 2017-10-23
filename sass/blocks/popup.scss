@@ -86,8 +86,8 @@
   margin-left: 0;
 }
 
-@media (min-width: 768px){
-  .popup__wrapper{
+@media (min-width: 768px) {
+  .popup__wrapper {
     width: 350px;
     height: 290px;
     padding-top: 34px;
@@ -96,13 +96,13 @@
     border: 1px solid #c7c7c7;
   }
 
-  .popup__header{
+  .popup__header {
     padding-left: 0;
     padding-right: 0;
     font-size: 29px;
   }
 
-  .popup__sizes{
+  .popup__sizes {
     width: 250px;
 
     input[type="checkbox"]:checked + label::before {

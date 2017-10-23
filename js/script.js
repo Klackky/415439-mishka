@@ -51,14 +51,15 @@ var overlay = document.querySelector(".overlay");
 
 if(link){
   link.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.add("popup__wrapper--show");
-    overlay.classList.add(".overlay--show");
+  event.preventDefault();
+  overlay.classList.add("overlay--show");
+  popup.classList.add("popup__wrapper--show");
 
-    window.addEventListener("keydown", function(event) {
-      if (event.keyCode === 27) {
-        if (popup.classList.contains("popup__wrapper--show")) {
-          popup.classList.remove("popup__wrapper--show");
+  window.addEventListener("keydown", function(event) {
+    if (event.keyCode === 27) {
+      if (popup.classList.contains("popup__wrapper--show")) {
+        popup.classList.remove("popup__wrapper--show");
+        overlay.classList.remove("overlay--show");
         }
       }
     });
@@ -67,18 +68,19 @@ if(link){
 
 var order_list = document.querySelectorAll(".item__icon-cart");
 var modal = document.querySelector(".popup__wrapper");
-var overlay = document.querySelector(".overlay");
+var cover = document.querySelector(".overlay");
 
 for (i = 0; i < order_list.length; i++) {
   order_list[i].addEventListener("click", function(event) {
     event.preventDefault();
     modal.classList.add("popup__wrapper--show");
-    overlay.classList.add ("overlay--show");
+    cover.classList.add("overlay--show");
 
     window.addEventListener("keydown", function(event) {
       if (event.keyCode === 27) {
         if (modal.classList.contains("popup__wrapper--show")) {
           modal.classList.remove("popup__wrapper--show");
+          cover.classList.remove("overlay--show");
         }
       }
     });
