@@ -537,9 +537,13 @@ $tiffany-color: #63d1bb;
 
 @media (min-width: 1150px) {
   .order-form__fieldset {
-    padding-left: 120px;
+    padding-left: 102px;
     padding-right: 205px;
     padding-top: 30px;
+  }
+
+  .order-form__label-radio {
+    padding-top: 0;
   }
 
   .order-form__fieldset-wrapper {
@@ -549,8 +553,8 @@ $tiffany-color: #63d1bb;
   }
 
   .order-form__fieldset--contacts {
-    padding-bottom: 27px;
-    padding-top: 11px;
+    padding-bottom: 36px;
+    padding-top: 0;
   }
 
   .order-form__radio-content {
@@ -561,13 +565,15 @@ $tiffany-color: #63d1bb;
   .order-form__fieldset--color {
     background-color: #f1f1f1;
     padding-bottom: 20px;
-    padding-top: 50px;
+    padding-top: 54px;
     max-width: 100%;
+    padding-right: 187px;
   }
 
   .order-form__fieldset--name {
-    padding-top: 60px;
+    padding-top: 67px;
     padding-bottom: 35px;
+    padding-right: 215px;
   }
 
   .order-form__legend {
@@ -592,6 +598,26 @@ $tiffany-color: #63d1bb;
     font-size: 19px;
     padding-bottom: 14px;
     max-width: 700px;
+  }
+
+  .order-form__label-radio {
+    &::before {
+      width: 48px;
+      height: 48px;
+      left: -16px;
+      top: -14px;
+    }
+    &:hover {
+      &::after {
+        top: 2px;
+        left: 0;
+      }
+    }
+  }
+
+  .order-form__radio:checked + label::after {
+    top: 2px;
+    left: 0;
   }
 
   .order-form__checkbox-content {
@@ -619,12 +645,12 @@ $tiffany-color: #63d1bb;
 
   .order-form__label-active {
     width: 10%;
-    padding-top: 10px;
     padding-bottom: 0;
   }
 
   .order-form__input-wrapper {
-    flex: 0 0 86%;
+    flex: 1 0 86%;
+    margin-top: 0;
   }
 
   .order-form__input-contacts {
@@ -647,16 +673,20 @@ $tiffany-color: #63d1bb;
     max-width: 850px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 0;
   }
 
   .order-form__fieldset-contacts-wrapper {
-    padding-top: 52px;
+    padding-top: 64px;
+    padding-bottom: 16px;
     max-width: 100%;
+    margin-top: -18px;
   }
 
   .order-form__fieldset--textarea {
     padding-top: 0;
     padding-right: 205px;
+    padding-bottom: 42px;
     max-width: 850px;
     margin-left: auto;
     margin-right: auto;
@@ -664,14 +694,18 @@ $tiffany-color: #63d1bb;
 
   .order-form__textarea {
     margin-left: 32px;
-    width: 81%;
-    height: 135px;
+    width: 82%;
+    height: 122px;
     font-size: 19px;
     padding-top: 13px;
   }
 
   .order-form__legend--add {
-    padding-top: 20px;
+    padding-top: 17px;
+  }
+
+  .order-form__legend--color {
+    padding-top: 13px;
   }
 
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
