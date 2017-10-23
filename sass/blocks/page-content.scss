@@ -11,8 +11,9 @@
   }
 
   .page-content__wrapper {
-    padding-left: 6.5%;
-    padding-right: 4.4%;
+    max-width: 668px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .page-content__index-wrapper {
@@ -24,12 +25,11 @@
 
 @media (min-width: 1150px) {
   .page-content__wrapper {
-    margin-top: 140px;
-    padding-left: 3.6%;
+    margin-top: 125px;
     max-width: 1050px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 106px;
+    padding-bottom: 96px;
   }
 
   .page-content__index-wrapper {

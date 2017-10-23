@@ -1,11 +1,5 @@
 $tiffany-color: #63d1bb;
 
-@mixin standart-placeholder {
-  font-size: 17px;
-  line-height: 18px;
-  color: #c7c7c7;
-}
-
 .order-form__text {
   font-size: 13px;
   line-height: 24px;
@@ -41,9 +35,10 @@ $tiffany-color: #63d1bb;
   text-transform: uppercase;
   color: $tiffany-color;
   padding-left: 0;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
   width: 260px;
   margin-top: 0;
+  margin-bottom: 0;
 
   &::after {
     content: "";
@@ -208,6 +203,7 @@ $tiffany-color: #63d1bb;
   border-bottom: 2px solid black;
   font-size: 17px;
   line-height: 18px;
+  font-family: "Open Sans", "Verdana", sans-serif;
 
   &::placeholder {
     color: #c7c7c7;
@@ -218,6 +214,10 @@ $tiffany-color: #63d1bb;
   }
 
   &:active {
+    border-color: #62d1ba;
+  }
+
+  &:focus {
     border-color: #62d1ba;
   }
 }
@@ -277,6 +277,10 @@ $tiffany-color: #63d1bb;
   &:active {
     border-color: #62d1ba;
   }
+
+  &:focus {
+    border-color: #62d1ba;
+  }
 }
 
 .order-form__textarea {
@@ -300,6 +304,10 @@ $tiffany-color: #63d1bb;
   }
 
   &:active {
+    border-color: #62d1ba;
+  }
+
+  &:focus {
     border-color: #62d1ba;
   }
 }
@@ -331,13 +339,13 @@ $tiffany-color: #63d1bb;
   }
 
   .order-form__fieldset {
-    padding: 0 100px 48px 50px;
+    padding: 0 100px 48px 42px;
   }
 
   .order-form__fieldset--color {
     padding-top: 46px;
     background-color: #f1f1f1;
-    margin-top: -30px;
+    margin-top: -26px;
     padding-bottom: 20px;
   }
 
@@ -377,7 +385,7 @@ $tiffany-color: #63d1bb;
 
   .order-form__ckeckbox-wrapper {
     display: flex;
-    flex: 1 0 77%;
+    flex: 1 0 76%;
     flex-flow: row wrap;
     margin-left: 121px;
     margin-top: 10px;
@@ -391,16 +399,16 @@ $tiffany-color: #63d1bb;
     &::before {
       width: 48px;
       height: 48px;
-      left: -14px;
-      top: -11px;
+      left: -16px;
+      top: -8px;
     }
 
     &:hover {
       &::after {
         width: 22px;
         height: 22px;
-        top: 3px;
-        left: 1px;
+        top: 7px;
+        left: -1px;
       }
     }
   }
@@ -414,7 +422,6 @@ $tiffany-color: #63d1bb;
     display: flex;
     flex-direction: column;
     flex: 1 0 75%;
-    margin-top: 7px;
   }
 
   .order-form__checkbox:checked + label::after {
@@ -424,19 +431,21 @@ $tiffany-color: #63d1bb;
 
   .order-form__input-name-content {
     display: flex;
-    margin-left: 33px;
-    margin-bottom: 33px;
+    margin-left: 31px;
+    margin-bottom: 36px;
   }
 
   .order-form__label-name {
     margin-right: 25px;
     font-size: 19px;
+    padding-top: 5px;
   }
 
   .order-form__input-contacts-content {
     display: flex;
-    margin-right: 30px;
-    margin-left: 49px;
+    margin-right: 39px;
+    margin-left: 41px;
+    padding-top: 0;
   }
 
   .order-form__input-contacts {
@@ -445,11 +454,13 @@ $tiffany-color: #63d1bb;
     padding-left: 19px;
     font-size: 19px;
     color: #c7c7c7;
+    padding-bottom: 8px;
   }
 
   .order-form__label-active {
     width: 21%;
     padding-top: 5px;
+    margin-top: 6px;
 
     &::after {
       display: none;
@@ -457,16 +468,16 @@ $tiffany-color: #63d1bb;
   }
 
   .order-form__radio:checked + label::after {
-    top: 5px;
-    left: 1px;
+    top: 7px;
+    left: -1px;
     width: 22px;
     height: 22px;
   }
 
   .order-form__fieldset--name {
     padding-top: 60px;
-    padding-right: 31px;
-    padding-bottom: 33px;
+    padding-right: 39px;
+    padding-bottom: 27px;
   }
 
   .order-form__send-order {
@@ -475,6 +486,8 @@ $tiffany-color: #63d1bb;
     padding-left: 20px;
     margin-bottom: 40px;
     margin-top: 6px;
+    margin-left: 22px;
+    margin-right: 40px;
   }
 
   .order-form__span {
@@ -485,8 +498,8 @@ $tiffany-color: #63d1bb;
 
   .order-form__fieldset-contacts-wrapper {
     background-color: #f1f1f1;
-    padding-top: 40px;
-    padding-bottom: 29px;
+    padding-top: 52px;
+    padding-bottom: 24px;
     margin-bottom: 50px;
     margin-top: -13px;
   }
@@ -494,6 +507,7 @@ $tiffany-color: #63d1bb;
   .order-form__input-text {
     padding-left: 15px;
     font-size: 19px;
+    padding-bottom: 12px;
   }
 
   .order-form__radio-wrapper {
@@ -501,12 +515,15 @@ $tiffany-color: #63d1bb;
   }
 
   .order-form__text {
-    padding-left: 50px;
+    padding-left: 42px;
     padding-right: 50px;
     font-size: 17px;
     padding-top: 52px;
     padding-bottom: 43px;
     line-height: 30px;
+    max-width: 668px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .order-form__image {
@@ -520,11 +537,11 @@ $tiffany-color: #63d1bb;
   .order-form__fieldset--contacts {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 17px;
+    padding-bottom: 25px;
   }
 
   .order-form__fieldset--textarea {
-    padding-right: 30px;
+    padding-right: 38px;
     padding-bottom: 40px;
   }
 
@@ -532,14 +549,16 @@ $tiffany-color: #63d1bb;
     margin-left: 60px;
     font-size: 19px;
     padding-top: 13px;
+    height: 123px;
   }
 }
 
 @media (min-width: 1150px) {
   .order-form__fieldset {
-    padding-left: 102px;
+    padding-left: 111px;
     padding-right: 205px;
     padding-top: 30px;
+    padding-bottom: 43px;
   }
 
   .order-form__label-radio {
@@ -554,6 +573,7 @@ $tiffany-color: #63d1bb;
 
   .order-form__fieldset--contacts {
     padding-bottom: 36px;
+    padding-right: 211px;
     padding-top: 0;
   }
 
@@ -567,13 +587,13 @@ $tiffany-color: #63d1bb;
     padding-bottom: 20px;
     padding-top: 54px;
     max-width: 100%;
-    padding-right: 187px;
+    padding-right: 197px;
   }
 
   .order-form__fieldset--name {
-    padding-top: 67px;
-    padding-bottom: 35px;
-    padding-right: 215px;
+    padding-top: 58px;
+    padding-bottom: 32px;
+    padding-right: 225px;
   }
 
   .order-form__legend {
@@ -583,12 +603,16 @@ $tiffany-color: #63d1bb;
     width: 10%;
   }
 
+  .order-form__legend--name{
+    padding-top: 8px;
+  }
+
   .order-form__input-name-content {
     margin-bottom: 35px;
   }
 
   .order-form__text {
-    width: 700px;
+    max-width: 700px;
     padding: 101px 175px 20px;
     margin-left: auto;
     margin-right: auto;
@@ -628,7 +652,7 @@ $tiffany-color: #63d1bb;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    max-width: 700px;
+    max-width: 61%;
     padding-left: 0;
   }
 
@@ -646,6 +670,7 @@ $tiffany-color: #63d1bb;
   .order-form__label-active {
     width: 10%;
     padding-bottom: 0;
+    padding-top: 0;
   }
 
   .order-form__input-wrapper {
@@ -685,7 +710,7 @@ $tiffany-color: #63d1bb;
 
   .order-form__fieldset--textarea {
     padding-top: 0;
-    padding-right: 205px;
+    padding-right: 212px;
     padding-bottom: 42px;
     max-width: 850px;
     margin-left: auto;
