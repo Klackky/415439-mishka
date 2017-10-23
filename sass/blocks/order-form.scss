@@ -91,7 +91,7 @@ $tiffany-color: #63d1bb;
       border-color: #62d1ba;
     }
 
-    &::after{
+    &::after {
       position: absolute;
       content: "";
       width: 16px;
@@ -155,7 +155,7 @@ $tiffany-color: #63d1bb;
       border-color: #62d1ba;
     }
 
-    &::after{
+    &::after {
       position: absolute;
       width: 23px;
       height: 20px;
@@ -266,7 +266,7 @@ $tiffany-color: #63d1bb;
   font-size: 17px;
   line-height: 18px;
 
-  &::placeholder{
+  &::placeholder {
     color: #c7c7c7;
   }
 
@@ -359,8 +359,8 @@ $tiffany-color: #63d1bb;
       width: 50px;
       height: 50px;
     }
-    &:hover{
-      &::after{
+    &:hover {
+      &::after {
         width: 36px;
         height: 36px;
       }
@@ -371,7 +371,7 @@ $tiffany-color: #63d1bb;
     margin-bottom: 30px;
   }
 
-  .order-form__legend--color{
+  .order-form__legend--color {
     padding-top: 21px;
   }
 
@@ -394,8 +394,9 @@ $tiffany-color: #63d1bb;
       left: -14px;
       top: -11px;
     }
-    &:hover{
-      &::after{
+
+    &:hover {
+      &::after {
         width: 22px;
         height: 22px;
         top: 3px;
