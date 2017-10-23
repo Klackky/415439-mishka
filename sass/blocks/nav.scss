@@ -107,7 +107,6 @@ $nav-border: 1px solid #ececec;
   cursor: pointer;
   position: absolute;
   left: 30px;
-  opacity: 0.5;
 
   &:hover {
     background: url("../img/icon-search-hover.svg");
@@ -286,7 +285,7 @@ $nav-border: 1px solid #ececec;
 
   .main-nav__form {
     height: 40px;
-    padding-top: 40px;
+    padding-top: 45px;
   }
 
   .main-nav__item--site-catalog {
