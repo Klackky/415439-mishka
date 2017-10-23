@@ -555,7 +555,7 @@ $tiffany-color: #63d1bb;
 
 @media (min-width: 1150px) {
   .order-form__fieldset {
-    padding-left: 111px;
+    padding-left: 100px;
     padding-right: 205px;
     padding-top: 30px;
     padding-bottom: 43px;
@@ -573,7 +573,7 @@ $tiffany-color: #63d1bb;
 
   .order-form__fieldset--contacts {
     padding-bottom: 36px;
-    padding-right: 211px;
+    padding-right: 202px;
     padding-top: 0;
   }
 
@@ -587,13 +587,13 @@ $tiffany-color: #63d1bb;
     padding-bottom: 20px;
     padding-top: 54px;
     max-width: 100%;
-    padding-right: 197px;
+    padding-right: 185px;
   }
 
   .order-form__fieldset--name {
     padding-top: 58px;
     padding-bottom: 32px;
-    padding-right: 225px;
+    padding-right: 215px;
   }
 
   .order-form__legend {
@@ -652,7 +652,7 @@ $tiffany-color: #63d1bb;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    max-width: 61%;
+    max-width: 698px;
     padding-left: 0;
   }
 
@@ -710,7 +710,7 @@ $tiffany-color: #63d1bb;
 
   .order-form__fieldset--textarea {
     padding-top: 0;
-    padding-right: 212px;
+    padding-right: 205px;
     padding-bottom: 42px;
     max-width: 850px;
     margin-left: auto;
@@ -736,6 +736,9 @@ $tiffany-color: #63d1bb;
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .order-form__ckeckbox-wrapper {
       margin-left: 120px;
+    }
+    .order-form__fieldset--color {
+      padding-right: 205px;
     }
   }
 }
