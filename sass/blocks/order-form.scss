@@ -367,6 +367,7 @@ $tiffany-color: #63d1bb;
       width: 50px;
       height: 50px;
     }
+
     &:hover {
       &::after {
         width: 36px;
@@ -561,10 +562,6 @@ $tiffany-color: #63d1bb;
     padding-bottom: 43px;
   }
 
-  .order-form__label-radio {
-    padding-top: 0;
-  }
-
   .order-form__fieldset-wrapper {
     max-width: 850px;
     margin-left: auto;
@@ -603,7 +600,7 @@ $tiffany-color: #63d1bb;
     width: 10%;
   }
 
-  .order-form__legend--name{
+  .order-form__legend--name {
     padding-top: 8px;
   }
 
@@ -625,12 +622,15 @@ $tiffany-color: #63d1bb;
   }
 
   .order-form__label-radio {
+    padding-top: 0;
+
     &::before {
       width: 48px;
       height: 48px;
       left: -16px;
       top: -14px;
     }
+
     &:hover {
       &::after {
         top: 2px;
@@ -737,6 +737,7 @@ $tiffany-color: #63d1bb;
     .order-form__ckeckbox-wrapper {
       margin-left: 120px;
     }
+
     .order-form__fieldset--color {
       padding-right: 205px;
     }
