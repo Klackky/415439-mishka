@@ -1,182 +1,211 @@
 $standart-border: 1px solid #ececec;
+
 .weekly-promo {
-    max-width: 320px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.weekly-promo__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.weekly-promo__header {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 25px;
+}
+
+.weekly-promo__subheader {
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 20px;
+  color: #63d1bb;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 12px;
+}
+
+.weekly-promo__text {
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 14px;
+}
+
+.weekly-promo__info {
+  width: 100%;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+}
+
+.weekly-promo__info-item {
+  text-align: left;
+
+  th {
+    border-bottom: $standart-border;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    font-weight: normal;
+  }
+
+  td {
+    border-bottom: $standart-border;
+    padding-bottom: 9px;
+    padding-top: 7px;
+    padding-left: 21px;
+  }
+}
+
+.weekly-promo__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 27px;
+  padding-top: 15px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .weekly-promo {
+    max-width: 668px;
     margin-left: auto;
     margin-right: auto;
-}
-.weekly-promo__wrapper {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.weekly-promo__header {
-    font-size: 25px;
+  }
+
+  .weekly-promo__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .weekly-promo__text {
+    padding-top: 21px;
+    font-size: 17px;
     line-height: 30px;
-    font-weight: bold;
-    margin: 0;
-    padding-top: 25px;
-}
-.weekly-promo__subheader {
-    text-transform: uppercase;
-    font-size: 17px;
-    line-height: 20px;
-    color: #63d1bb;
-    margin: 0;
-    padding-top: 5px;
-    padding-bottom: 12px;
-}
-.weekly-promo__text {
-    font-size: 15px;
-    line-height: 24px;
-    margin-bottom: 14px;
-}
-.weekly-promo__info {
-    width: 100%;
-    margin-bottom: 30px;
-    border-collapse: collapse;
-}
-.weekly-promo__info-item {
-    text-align: left;
-    th {
-        border-bottom: $standart-border;
-        padding-bottom: 9px;
-        padding-top: 9px;
-        font-weight: normal;
-    }
+  }
+
+  .weekly-promo__header-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 38px;
+  }
+
+  .weekly-promo__header {
+    padding-top: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .weekly-promo__info-item {
     td {
-        border-bottom: $standart-border;
-        padding-bottom: 9px;
-        padding-top: 7px;
-        padding-left: 21px;
+      padding-top: 10px;
+      padding-left: 2px;
     }
-}
-.weekly-promo__price {
+  }
+
+  .weekly-promo__subheader {
+    padding-right: 26px;
     font-size: 17px;
-    line-height: 24px;
-    font-weight: bold;
+    flex: 0 0 80px;
     text-align: center;
-    padding-bottom: 27px;
-    padding-top: 15px;
-    margin: 0;
-}
-@media (min-width: 768px) {
-    .weekly-promo {
-        max-width: 668px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .weekly-promo__wrapper {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .weekly-promo__text {
-        padding-top: 21px;
-        font-size: 17px;
-        line-height: 30px;
-    }
-    .weekly-promo__header-container {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 38px;
-    }
-    .weekly-promo__header {
-        padding-top: 0;
-        font-size: 43px;
-        line-height: 50px;
-    }
-    .weekly-promo__info-item {
-        td {
-            padding-top: 10px;
-            padding-left: 2px;
-        }
-    }
-    .weekly-promo__subheader {
-        padding-right: 26px;
-        font-size: 17px;
-        flex: 0 0 80px;
-        text-align: center;
-        margin-top: 5px;
-    }
-    .weekly-promo__promo-item {
-        display: flex;
-        flex-wrap: wrap;
-        flex-basis: 100%;
-    }
-    .weekly-promo__info {
-        flex: 0 0 44%;
-        order: 3;
-        margin-top: 35px;
-        font-size: 15px;
-    }
-    .weekly-promo__image {
-        width: 40%;
-        flex-grow: 1;
-        margin-left: 40px;
-        margin-top: 47px;
-    }
-    .weekly-promo__description {
-        flex: 0 0 44%;
-    }
-    .weekly-promo__order {
-        margin-top: -132px;
-    }
-    .weekly-promo__price {
-        font-size: 20px;
-        line-height: 24px;
-        padding-bottom: 35px;
-    }
+    margin-top: 5px;
+  }
+
+  .weekly-promo__promo-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+
+  .weekly-promo__info {
+    flex: 0 0 44%;
+    order: 3;
+    margin-top: 35px;
+    font-size: 15px;
+  }
+
+  .weekly-promo__image {
+    width: 40%;
+    flex-grow: 1;
+    margin-left: 40px;
+    margin-top: 47px;
+  }
+
+  .weekly-promo__description {
+    flex: 0 0 44%;
+  }
+
+  .weekly-promo__order {
+    margin-top: -132px;
+  }
+
+  .weekly-promo__price {
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 35px;
+  }
 }
 
 @media (min-width: 1150px) {
-    .weekly-promo {
-        max-width: 1050px;
-    }
-    .weekly-promo__header-container {
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-        padding-left: 44px;
-        padding-top: 114px;
-    }
-    .weekly-promo__header {
-        margin-left: 20px;
-        z-index: 5;
-    }
-    .weekly-promo__text {
-        padding-top: 23px;
-        padding-right: 8px;
-    }
-    .weekly-promo__image {
-        margin-top: -120px;
-        margin-left: 37px;
-    }
-    .weekly-promo__price {
-        text-align: start;
-        padding-left: 75px;
-    }
-    .weekly-promo__description {
-        margin-left: 175px;
-        width: 30%;
-        flex: 0 0 30%;
-    }
-    .weekly-promo__order {
-        margin-left: 175px;
-        width: 30%;
-        flex: 0 0 30%;
-        margin-top: -128px;
-    }
-    .weekly-promo__info {
-        margin-top: 48px;
-    }
-    .weekly-promo__header {
-        font-size: 53px;
-    }
-    .weekly-promo__wrapper {
-        padding: 0;
-    }
+  .weekly-promo {
+    max-width: 1050px;
+  }
+
+  .weekly-promo__header-container {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-left: 44px;
+    padding-top: 114px;
+  }
+
+  .weekly-promo__header {
+    margin-left: 20px;
+    z-index: 5;
+    font-size: 53px;
+  }
+
+  .weekly-promo__text {
+    padding-top: 23px;
+    padding-right: 8px;
+  }
+
+  .weekly-promo__image {
+    margin-top: -120px;
+    margin-left: 37px;
+  }
+
+  .weekly-promo__price {
+    text-align: start;
+    padding-left: 75px;
+  }
+
+  .weekly-promo__description {
+    margin-left: 175px;
+    width: 30%;
+    flex: 0 0 30%;
+  }
+
+  .weekly-promo__order {
+    margin-left: 175px;
+    width: 30%;
+    flex: 0 0 30%;
+    margin-top: -128px;
+  }
+
+  .weekly-promo__info {
+    margin-top: 48px;
+  }
+
+  .weekly-promo__wrapper {
+    padding: 0;
+  }
 }
 
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
-    .weekly-promo__price {
-        padding-left: 0;
-    }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .weekly-promo__price {
+    padding-left: 0;
+  }
 }

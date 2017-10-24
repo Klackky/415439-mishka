@@ -17,6 +17,7 @@ $nav-border: 1px solid #ececec;
     opacity: 0.2;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .logo {
     order: 1;
@@ -32,6 +33,7 @@ $nav-border: 1px solid #ececec;
     justify-content: center;
   }
 }
+
 @media (min-width: 1150px) {
   .logo {
     order: 2;
@@ -46,5 +48,11 @@ $nav-border: 1px solid #ececec;
 
   .logo__image {
     margin: 0;
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .logo {
+      padding-bottom: 4px;
+    }
   }
 }

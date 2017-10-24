@@ -77,7 +77,7 @@
   }
 
   .button--order-promo {
-  width: 285px;
+    width: 285px;
   }
 
   .button--send-order {
@@ -86,11 +86,15 @@
     padding-right: 0;
     height: 51px;
   }
+
+  .button--add {
+    width: 355px;
   }
+}
 
 @media (min-width: 1150px) {
   .button--write-us {
-    margin: -50px 0 0 175px;
+    margin: -55px 0 0 175px;
     padding-bottom: 0;
     height: 35px;
     position: relative;
@@ -107,7 +111,7 @@
   }
 
   .button--make-order {
-    width: 224px;
+    width: 226px;
     padding-left: 0;
     padding-right: 0;
     margin-left: 80px;
