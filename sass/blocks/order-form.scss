@@ -31,7 +31,7 @@
   font-weight: bold;
   position: relative;
   text-transform: uppercase;
-  color: #63d1bb;;
+  color: #63d1bb;
   padding-left: 0;
   padding-bottom: 20px;
   width: 260px;
@@ -45,7 +45,7 @@
     left: 62px;
     width: 198px;
     height: 1px;
-    background-color: #63d1bb;;
+    background-color: #63d1bb;
   }
 }
 
@@ -54,7 +54,7 @@
   position: absolute;
 
   &:focus {
-    + label:before {
+    + label::before {
       border-color: #d7d7d7;
     }
   }
@@ -135,10 +135,10 @@
   top: -6px;
 
   &:focus {
-    + label:before {
+    + label::before {
       border-color: #d7d7d7;
     }
-}
+  }
 }
 
 .order-form__checkbox-content {
@@ -250,7 +250,7 @@
   font-weight: bold;
   position: relative;
   text-transform: uppercase;
-  color: #63d1bb;;
+  color: #63d1bb;
   padding-left: 0;
   padding-bottom: 24px;
   display: block;
