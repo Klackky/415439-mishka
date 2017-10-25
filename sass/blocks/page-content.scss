@@ -5,9 +5,20 @@
   margin-top: 35px;
 }
 
+.page-content__items {
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (min-width: 768px) {
   .page-content__wrapper-form {
     padding: 0;
+  }
+
+  .page-content__items {
+    margin-top: 70px;
+    max-width: none;
   }
 
   .page-content__wrapper {
@@ -30,6 +41,10 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 96px;
+  }
+
+  .page-content__items {
+    display: flex;
   }
 
   .page-content__index-wrapper {

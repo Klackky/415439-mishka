@@ -101,8 +101,8 @@ $nav-border: 1px solid #ececec;
 
 .main-nav__form-label {
   background: url("../img/icon-search.svg");
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   font-size: 0;
   cursor: pointer;
   position: absolute;
@@ -267,25 +267,25 @@ $nav-border: 1px solid #ececec;
     display: flex;
     flex: 0 0 37%;
     padding-left: 0;
-    height: 95px;
+    height: 90px;
     margin-left: 0;
   }
 
   .main-nav__wrapper {
     max-width: 1050px;
-    height: 95px;
+    height: 90px;
   }
 
   .main-nav__item {
     padding-left: 0;
     padding-right: 20px;
     width: 42%;
-    padding-top: 38px;
+    padding-top: 30px;
   }
 
   .main-nav__form {
     height: 40px;
-    padding-top: 45px;
+    margin-left: 2px;
   }
 
   .main-nav__item--site-catalog {
@@ -316,24 +316,24 @@ $nav-border: 1px solid #ececec;
     flex: 0 0 33.5%;
     border: none;
     margin-left: 6%;
-    height: 95px;
   }
 
   .main-nav__item--cart {
     border: none;
     width: 55%;
     padding-right: 0;
-    padding-left: 85px;
-    padding-top: 40px;
+    padding-left: 84px;
+    padding-top: 30px;
   }
 
   .main-nav__form-label {
-    left: 34px;
+    left: 35px;
+    top: 35px;
   }
 
   .main-nav__icon-cart {
     position: absolute;
-    top: 42px;
+    top: 32px;
     left: 34px;
   }
 
@@ -349,7 +349,7 @@ $nav-border: 1px solid #ececec;
     display: inline;
     text-align: end;
     padding-right: 0;
-    padding-top: 18px;
+    padding-top: 14px;
     width: 243px;
   }
 
@@ -361,7 +361,7 @@ $nav-border: 1px solid #ececec;
     font-weight: bold;
     padding-right: 0;
     display: block;
-    padding-top: 18px;
+    padding-top: 14px;
   }
 
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {

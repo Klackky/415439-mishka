@@ -30,6 +30,7 @@ $padding-bottom-for-items: 15px;
   font-weight: bold;
   text-align: left;
   list-style: none;
+  padding-right: 37px;
 }
 
 .about-us__list {
@@ -37,6 +38,8 @@ $padding-bottom-for-items: 15px;
 }
 
 .about-us__item--material {
+  padding-right: 64px;
+
   &::before {
     content: url("../img/icon-feature-flower.svg");
     display: block;
@@ -55,6 +58,8 @@ $padding-bottom-for-items: 15px;
 }
 
 .about-us__item--likes {
+  padding-right: 56px;
+
   &::before {
     content: url("../img/icon-feature-heart.svg");
     display: block;
@@ -75,6 +80,8 @@ $padding-bottom-for-items: 15px;
 }
 
 .about-us__item--producer {
+  padding-right: 0;
+
   &::before {
     content: url("../img/icon-feature-rocket.svg");
     display: block;
@@ -133,10 +140,6 @@ $padding-bottom-for-items: 15px;
     position: relative;
   }
 
-  .about-us__item--material {
-    order: 1;
-  }
-
   .about-us__item--handmade {
     order: 2;
 
@@ -149,6 +152,7 @@ $padding-bottom-for-items: 15px;
     flex: 1 0 40%;
     font-size: 20px;
     line-height: 22px;
+    box-sizing: border-box;
 
     &::before {
       padding-top: 55px;
@@ -158,10 +162,12 @@ $padding-bottom-for-items: 15px;
   .about-us__item--likes {
     order: 5;
     padding-top: 8px;
+    padding-right: 92px;
   }
 
   .about-us__item--style {
     order: 3;
+    padding-right: 70px;
   }
 
   .about-us__item--producer {
@@ -170,6 +176,16 @@ $padding-bottom-for-items: 15px;
 
   .about-us__item--giftwrap {
     order: 6;
+    padding-right: 39px;
+
+    &::before {
+      padding-bottom: 19px;
+    }
+  }
+
+  .about-us__item--material {
+    order: 1;
+    padding-right: 82px;
   }
 }
 
@@ -207,6 +223,8 @@ $padding-bottom-for-items: 15px;
   }
 
   .about-us__item--likes {
+    padding-right: 110px;
+
     &::before {
       padding-bottom: 18px;
       padding-top: 53px;
@@ -214,8 +232,32 @@ $padding-bottom-for-items: 15px;
   }
 
   .about-us__item--giftwrap {
+    padding-right:  57px;
+
     &::before {
-      padding-top: 60px;
+      padding-top: 58px;
+    }
+  }
+
+  .about-us__item--style {
+    padding-right: 88px;
+  }
+
+  .about-us__item--producer {
+    &::before {
+      padding-top: 58px;
+    }
+  }
+
+  .about-us__item--handmade {
+    padding-right: 50px;
+  }
+
+  .about-us__item--material {
+    padding-right: 99px;
+
+    &::before {
+      padding-bottom: 13px;
     }
   }
 }

@@ -22,7 +22,7 @@
 
 .main-footer__developed-by-container {
   display: flex;
-  padding-top: 10px;
+  padding-top: 7px;
   padding-bottom: 25px;
   justify-content: center;
   width: 260px;
@@ -86,5 +86,9 @@
 
   .main-footer__developed-by-container {
     justify-content: flex-end;
+  }
+
+  .main-footer__htmlacademy {
+    padding-left:  19px;
   }
 }

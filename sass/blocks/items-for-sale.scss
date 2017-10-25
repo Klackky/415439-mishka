@@ -1,9 +1,17 @@
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
 .items-for-sale__container {
   background: url("../img/items-for-sale.jpg");
-  background-position: top center;
+  background-position: 50% -13%;
   background-repeat: no-repeat;
-  padding-top: 53px;
+  padding-top: 54px;
   background-color: #f9f9f9;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg");
+      background-size: 550px auto;
+  }
 }
 
 .items-for-sale__header {
@@ -47,7 +55,7 @@
 }
 
 .items-for-sale__item-container {
-  margin-top: 125px;
+  margin-top: 119px;
   position: relative;
   max-width: 320px;
   margin-left: auto;
@@ -82,12 +90,12 @@
   }
 
   .items-for-sale__item--interior {
-    height: 70px;
+    height: 66px;
     font-size: 20px;
   }
 
   .items-for-sale__item--toys {
-    height: 70px;
+    height: 66px;
     font-size: 20px;
   }
 
@@ -105,6 +113,8 @@
   .items-for-sale__item {
     width: 50%;
     max-width: none;
+    padding-left: 35px;
+    padding-top: 34px;
 
     &:hover {
       transform: translateY(-5px);
@@ -116,6 +126,11 @@
     background-position: 50% 0;
     background-repeat: no-repeat;
     position: relative;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/hero-tablet@2x.jpg");
+        background-size: 1145px auto;
+    }
   }
 }
 
@@ -127,8 +142,13 @@
     margin-right: auto;
     width: 1050px;
     background-repeat: no-repeat;
-    background-size: 120% 101%;
+    background-size: 120% 94%;
     position: static;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/hero-desktop@2x.jpg");
+        background-size: cover;
+    }
   }
 
   .items-for-sale {
@@ -136,7 +156,7 @@
   }
 
   .items-for-sale__item {
-    padding: 32px 100px 30px 36px;
+    padding: 32px 100px 30px 39px;
     background-position: 93% 54%;
   }
 
