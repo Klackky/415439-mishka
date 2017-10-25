@@ -69,8 +69,8 @@
     position: relative;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/review@2x.jpg");
-        background-size: 400px auto;
+      background-image: url("../img/review@2x.jpg");
+      background-size: 400px auto;
     }
 
     &::after {

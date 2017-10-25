@@ -9,8 +9,8 @@ $retina-dppx: 1.5dppx;
   background-color: #f9f9f9;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/hero-mobile@2x.jpg");
-      background-size: 550px auto;
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 550px auto;
   }
 }
 
@@ -128,8 +128,8 @@ $retina-dppx: 1.5dppx;
     position: relative;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/hero-tablet@2x.jpg");
-        background-size: 1145px auto;
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 1145px auto;
     }
   }
 }
@@ -146,8 +146,8 @@ $retina-dppx: 1.5dppx;
     position: static;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/hero-desktop@2x.jpg");
-        background-size: cover;
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: cover;
     }
   }
 
