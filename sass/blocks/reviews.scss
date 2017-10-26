@@ -65,7 +65,7 @@
 @media (min-width: 768px) {
   .reviews {
     background: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     position: relative;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
