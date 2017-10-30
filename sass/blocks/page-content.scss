@@ -1,8 +1,14 @@
 .page-content__wrapper {
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 55px;
-  margin-top: 35px;
+  padding-bottom: 60px;
+  margin-top: 29px;
+}
+
+.page-content__items {
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 768px) {
@@ -10,10 +16,16 @@
     padding: 0;
   }
 
+  .page-content__items {
+    margin-top: 70px;
+    max-width: none;
+  }
+
   .page-content__wrapper {
     max-width: 668px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 53px;
   }
 
   .page-content__index-wrapper {
@@ -29,7 +41,11 @@
     max-width: 1050px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 96px;
+    padding-bottom: 90px;
+  }
+
+  .page-content__items {
+    display: flex;
   }
 
   .page-content__index-wrapper {

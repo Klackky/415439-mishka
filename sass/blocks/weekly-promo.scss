@@ -90,7 +90,12 @@ $standart-border: 1px solid #ececec;
   .weekly-promo__header-container {
     display: flex;
     justify-content: space-between;
-    padding-top: 38px;
+    padding-top: 36px;
+  }
+
+  .weekly-promo__image-option {
+    width: 335px;
+    height: 405px;
   }
 
   .weekly-promo__header {
@@ -104,14 +109,18 @@ $standart-border: 1px solid #ececec;
       padding-top: 10px;
       padding-left: 2px;
     }
+
+    th {
+      width: 94px;
+    }
   }
 
   .weekly-promo__subheader {
-    padding-right: 26px;
+    padding-right: 22px;
     font-size: 17px;
     flex: 0 0 80px;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 4px;
   }
 
   .weekly-promo__promo-item {
@@ -130,7 +139,7 @@ $standart-border: 1px solid #ececec;
   .weekly-promo__image {
     width: 40%;
     flex-grow: 1;
-    margin-left: 40px;
+    margin-left: 42px;
     margin-top: 47px;
   }
 
@@ -158,11 +167,16 @@ $standart-border: 1px solid #ececec;
     flex-direction: row-reverse;
     justify-content: flex-end;
     padding-left: 44px;
-    padding-top: 114px;
+    padding-top: 115px;
+  }
+
+  .weekly-promo__image-option {
+    width: 525px;
+    height: 637px;
   }
 
   .weekly-promo__header {
-    margin-left: 20px;
+    margin-left: 22px;
     z-index: 5;
     font-size: 53px;
   }
@@ -174,22 +188,22 @@ $standart-border: 1px solid #ececec;
 
   .weekly-promo__image {
     margin-top: -120px;
-    margin-left: 37px;
+    margin-left: 34px;
   }
 
   .weekly-promo__price {
     text-align: start;
-    padding-left: 75px;
+    padding-left: 72px;
   }
 
   .weekly-promo__description {
-    margin-left: 175px;
+    margin-left: 177px;
     width: 30%;
     flex: 0 0 30%;
   }
 
   .weekly-promo__order {
-    margin-left: 175px;
+    margin-left: 177px;
     width: 30%;
     flex: 0 0 30%;
     margin-top: -128px;
@@ -197,6 +211,12 @@ $standart-border: 1px solid #ececec;
 
   .weekly-promo__info {
     margin-top: 48px;
+  }
+
+  .weekly-promo__info-item {
+    th {
+      width: 94px;
+    }
   }
 
   .weekly-promo__wrapper {

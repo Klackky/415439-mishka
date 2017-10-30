@@ -1,9 +1,9 @@
 $nav-border: 1px solid #ececec;
 
 .logo {
-  padding-top: 19px;
-  padding-bottom: 15px;
-  width: 90px;
+  padding-top: 11px;
+  padding-bottom: 7px;
+  width: 98px;
   margin: auto;
   display: flex;
 }
@@ -24,13 +24,19 @@ $nav-border: 1px solid #ececec;
     margin: 0;
     border: none;
     text-align: left;
-    width: 48%;
+    width: 200px;
     padding-top: 22px;
   }
 
   .logo__image {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    width: 109px;
+  }
+
+  .logo__image-option {
+    width: 112px;
+    height: 46px;
   }
 }
 
@@ -41,13 +47,20 @@ $nav-border: 1px solid #ececec;
     justify-content: center;
     width: 19%;
     border: none;
-    padding-left: 30px;
-    padding-top: 10px;
+    padding-top: 0;
     padding-bottom: 0;
+    align-self: center;
+    margin-left: 45px;
   }
 
   .logo__image {
     margin: 0;
+    width: 165px;
+  }
+
+  .logo__image-option {
+    width: 148px;
+    height: 73px;
   }
 
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {

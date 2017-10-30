@@ -7,12 +7,13 @@
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
-  width: 260px;
+  width: 255px;
   color: #444444;
   border: 2px solid #444444;
   display: block;
   cursor: pointer;
   background-color: transparent;
+  font-family: "Open Sans", "Verdana", sans-serif;
 
   &:hover {
     background-color: #444444;
@@ -26,7 +27,7 @@
 }
 
 .button--write-us {
-  width: 260px;
+  width: 255px;
   padding-left: 0;
   padding-right: 0;
   margin: 0 auto;
@@ -50,11 +51,16 @@
   order: 4;
 }
 
+.button--send-order {
+  width: 260px;
+}
+
 @media (min-width: 768px) {
   .button--write-review {
     width: 170px;
     position: absolute;
-    bottom: 322px;
+    top: 78px;
+    height: 18px;
     right: 0;
     padding-left: 0;
     padding-right: 0;
@@ -77,14 +83,14 @@
   }
 
   .button--order-promo {
-    width: 285px;
+    width: 287px;
   }
 
   .button--send-order {
-    width: 228px;
-    padding-left: 0;
-    padding-right: 0;
-    height: 51px;
+    width: 242px;
+    padding-top: 14px;
+    padding-left: 17px;
+    padding-right: 21px;
   }
 
   .button--add {
@@ -94,14 +100,14 @@
 
 @media (min-width: 1150px) {
   .button--write-us {
-    margin: -55px 0 0 175px;
+    margin: -55px 0 0 177px;
     padding-bottom: 0;
     height: 35px;
     position: relative;
   }
 
   .button--order-promo {
-    width: 290px;
+    width: 287px;
     height: 16px;
   }
 
@@ -115,5 +121,12 @@
     padding-left: 0;
     padding-right: 0;
     margin-left: 80px;
+  }
+
+  .button--send-order {
+    width: 240px;
+    padding-top: 14px;
+    padding-left: 17px;
+    padding-right: 17px;
   }
 }

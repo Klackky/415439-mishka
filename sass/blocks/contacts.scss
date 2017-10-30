@@ -25,7 +25,7 @@
 }
 
 .contacts__email {
-  padding-right: 32px;
+  padding-right: 29px;
 }
 
 .contacts__email-content {
@@ -88,6 +88,7 @@
     font-size: 43px;
     line-height: 50px;
     position: relative;
+    margin-bottom: 34px;
 
     &::before {
       content: "";
@@ -190,7 +191,7 @@
 
   .contacts__contact-info {
     flex-direction: column;
-    padding-left: 4px;
+    padding-left: 6px;
   }
 
   .contacts__address-container {

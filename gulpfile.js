@@ -60,7 +60,7 @@ gulp.task ("html", function(){
 
 
 gulp.task("webp", function() {
-  return gulp.src("img/**/*.{png, jpg}")
+  return gulp.src("img/**/*.{png,jpg}")
     .pipe(webp({
       quality: 90
     }))
