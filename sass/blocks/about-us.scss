@@ -31,6 +31,7 @@ $padding-bottom-for-items: 15px;
   text-align: left;
   list-style: none;
   padding-right: 37px;
+  position: relative;
 }
 
 .about-us__list {
@@ -39,65 +40,115 @@ $padding-bottom-for-items: 15px;
 
 .about-us__item--material {
   padding-right: 64px;
+  padding-top: 58px;
 
   &::before {
-    content: url("../img/icon-feature-flower.svg");
+    content: "";
+    background-image: url(../img/icon-feature-flower.svg);
+    background-repeat: no-repeat;
+    top: 5px;
+    left: 8px;
+    width: 32px;
+    height: 39px;
     display: block;
-    padding-bottom: $padding-bottom-for-items;
-    padding-left: 8px;
+    padding-bottom: 15px;
+    position: absolute;
   }
 }
 
 .about-us__item--style {
+  padding-top: 82px;
+
   &::before {
-    content: url("../img/icon-feature-money.svg");
+    content: "";
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
     display: block;
+    top: 27px;
+    left: 0;
+    width: 47px;
+    height: 28px;
     padding-top: 31px;
     padding-bottom: 22px;
+    position: absolute;
   }
 }
 
 .about-us__item--likes {
   padding-right: 56px;
+  padding-top: 83px;
 
   &::before {
-    content: url("../img/icon-feature-heart.svg");
+    content: "";
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
     display: block;
+    top: 34px;
+    left: 7px;
+    width: 33px;
+    height: 28px;
     padding-top: $padding-top-for-items;
     padding-bottom: $padding-bottom-for-items;
     padding-left: 8px;
+    position: absolute;
   }
 }
 
 .about-us__item--handmade {
+  padding-top: 82px;
+
   &::before {
-    content: url("../img/icon-feature-ball.svg");
+    content: "";
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+    top: 31px;
+    left: 3px;
+    width: 34px;
+    height: 34px;
     display: block;
     padding-top: 31px;
     padding-bottom: 15px;
     padding-left: 5px;
+    position: absolute;
   }
 }
 
 .about-us__item--producer {
   padding-right: 0;
+  padding-top: 85px;
 
   &::before {
-    content: url("../img/icon-feature-rocket.svg");
+    content: "";
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+    top: 34px;
+    left: 0;
+    width: 54px;
+    height: 23px;
     display: block;
     padding-top: 32px;
     padding-bottom: 24px;
     margin-left: -5px;
+    position: absolute;
   }
 }
 
 .about-us__item--giftwrap {
+  padding-top: 81px;
+
   &::before {
-    content: url("../img/icon-feature-gift.svg");
+    content: "";
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+    top: 29px;
+    left: 3px;
+    width: 33px;
+    height: 33px;
     display: block;
     padding-top: 30px;
     padding-left: 4px;
     padding-bottom: $padding-bottom-for-items;
+    position: absolute;
   }
 }
 
@@ -140,14 +191,6 @@ $padding-bottom-for-items: 15px;
     position: relative;
   }
 
-  .about-us__item--handmade {
-    order: 2;
-
-    &::before {
-      padding-top: 0;
-    }
-  }
-
   .about-us__item {
     flex: 1 0 40%;
     font-size: 20px;
@@ -155,28 +198,41 @@ $padding-bottom-for-items: 15px;
     box-sizing: border-box;
 
     &::before {
-      padding-top: 55px;
+      top: 60px;
+    }
+  }
+
+  .about-us__item--handmade {
+    order: 2;
+    padding-top: 106px;
+
+    &::before {
+      padding-top: 0;
+      top: 55px;
     }
   }
 
   .about-us__item--likes {
     order: 5;
-    padding-top: 8px;
+    padding-top: 109px;
     padding-right: 92px;
   }
 
   .about-us__item--style {
     order: 3;
     padding-right: 70px;
+    padding-top: 113px;
   }
 
   .about-us__item--producer {
     order: 4;
+    padding-top: 113px;
   }
 
   .about-us__item--giftwrap {
     order: 6;
     padding-right: 39px;
+    padding-top: 109px;
 
     &::before {
       padding-bottom: 19px;
@@ -186,6 +242,11 @@ $padding-bottom-for-items: 15px;
   .about-us__item--material {
     order: 1;
     padding-right: 82px;
+    padding-top: 106px;
+
+    &::before {
+      top: 53px;
+    }
   }
 }
 
@@ -258,6 +319,15 @@ $padding-bottom-for-items: 15px;
 
     &::before {
       padding-bottom: 13px;
+    }
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .about-us__item {
+      box-sizing: border-box;
+      width: 323px;
+      flex:none;
+      margin-right: 26px;
     }
   }
 }

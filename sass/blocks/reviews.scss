@@ -67,6 +67,8 @@
     background: url("../img/review@1x.jpg");
     background-repeat: repeat-y;
     position: relative;
+    background-size: 46% 100%;
+
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg");
