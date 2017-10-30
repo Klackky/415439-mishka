@@ -86,7 +86,7 @@
   position: relative;
 }
 
-.item__process {
+.item--process {
   border: 1px solid #ededed;
   margin-top: 32px;
   display: flex;
@@ -178,7 +178,7 @@
     max-width: none;
   }
 
-  .item__process {
+  .item--process {
     max-width: none;
     display: flex;
     flex-direction: column;
@@ -294,7 +294,7 @@
     background-position: 22% 3%;
   }
 
-  .item__process {
+  .item--process {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 0;
