@@ -44,7 +44,7 @@ $padding-bottom-for-items: 15px;
 
   &::before {
     content: "";
-    background-image: url(../img/icon-feature-flower.svg);
+    background-image: url("../img/icon-feature-flower.svg");
     background-repeat: no-repeat;
     top: 5px;
     left: 8px;
@@ -326,7 +326,7 @@ $padding-bottom-for-items: 15px;
     .about-us__item {
       box-sizing: border-box;
       width: 323px;
-      flex:none;
+      flex: none;
       margin-right: 26px;
     }
   }
