@@ -342,7 +342,6 @@
   }
 
   .order-form__fieldset {
-    padding-left: 40px;
     padding-bottom: 23px;
     max-width: 668px;
     padding-left: 0;
@@ -377,6 +376,7 @@
 
   .order-form__fieldset--type {
     padding-top: 0;
+    padding-top: 15px;
   }
 
   .order-form__label {
@@ -537,10 +537,6 @@
     box-sizing: border-box;
   }
 
-  .order-form__fieldset--type {
-    padding-top: 15px;
-  }
-
   .order-form__image {
     right: 24px;
   }
@@ -579,6 +575,8 @@
   }
 
   .order-form__label {
+    padding-left: 20px;
+
     &::before {
       left: unset;
       right: 188px;
@@ -651,7 +649,7 @@
   }
 
   .order-form__text {
-    padding: 100px 0px 20px;
+    padding: 100px 0 20px;
     margin-left: auto;
     margin-right: auto;
     width: 700px;
@@ -695,10 +693,6 @@
   .order-form__ckeckbox-wrapper {
     margin-top: 0;
     width: 765px;
-  }
-
-  .order-form__label {
-    padding-left: 20px;
   }
 
   .order-form__label-active {
