@@ -196,7 +196,6 @@
   border-bottom: 2px solid black;
   font-size: 17px;
   line-height: 18px;
-  font-family: "Open Sans", "Verdana", sans-serif;
 
   &::placeholder {
     color: #c7c7c7;
@@ -518,7 +517,7 @@
   .order-form__input-text {
     padding-left: 15px;
     font-size: 19px;
-    padding-bottom: 12px;
+    line-height: 21px;
   }
 
   .order-form__radio-wrapper {
@@ -662,8 +661,9 @@
 
   .order-form__input-text {
     font-size: 19px;
-    padding-bottom: 14px;
     max-width: 700px;
+    line-height: 30px;
+    padding-bottom: 10px;
   }
 
   .order-form__label-radio {
@@ -716,7 +716,7 @@
 
   .order-form__input-contacts {
     font-size: 19px;
-    padding-bottom: 13px;
+    line-height: 27px;
     width: 700px;
 
     &::placeholder {
