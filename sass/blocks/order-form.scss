@@ -393,12 +393,16 @@
   }
 
   .order-form__radio-content {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     padding-left: 19px;
   }
 
   .order-form__legend--color {
-    padding-top: 21px;
+    padding-top: 18px;
+  }
+
+  .order-form__legend--name {
+    padding-top: 10px;
   }
 
   .order-form__ckeckbox-wrapper {
@@ -465,7 +469,7 @@
 
   .order-form__label-active {
     width: 167px;
-    padding-top: 5px;
+    padding-top: 6px;
     margin-top: 6px;
 
     &::after {
@@ -489,7 +493,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 48px;
-    margin-top: 4px;
+    margin-top: 3px;
     max-width: 668px;
     margin-left: auto;
     margin-right: auto;
@@ -507,7 +511,7 @@
     background-color: #f1f1f1;
     padding-top: 52px;
     padding-bottom: 24px;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
     margin-top: 0;
   }
 
@@ -530,6 +534,8 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
+    padding-left: 0;
+    box-sizing: border-box;
   }
 
   .order-form__fieldset--type {
@@ -581,7 +587,8 @@
 
   .order-form__span {
     padding-bottom: 4px;
-    margin-left: 170px;
+    margin-left: 169px;
+    width: 318px;
   }
 
   .order-form__fieldset--contacts {
@@ -594,11 +601,11 @@
   }
   .order-form__fieldset--type {
     padding-top: 50px;
-    padding-bottom: 18px;
+    padding-bottom: 12px;
   }
 
   .order-form__radio-content {
-    margin-bottom: 34px;
+    margin-bottom: 38px;
     padding-left: 11px;
   }
 
@@ -609,6 +616,10 @@
     max-width: none;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .order-form__radio-wrapper {
+    width: 700px;
   }
 
 .order-form__fieldset-wrapper--color {
@@ -639,10 +650,12 @@
   }
 
   .order-form__text {
-    max-width: 700px;
-    padding: 101px 175px 20px;
+    padding: 100px 0px 20px;
     margin-left: auto;
     margin-right: auto;
+    width: 700px;
+    max-width: none;
+    box-sizing: border-box;
   }
 
   .order-form__input-text {
@@ -672,7 +685,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    margin-bottom: 48px;
+    margin-bottom: 45px;
     width: 700px;
     max-width: none;
   }
@@ -721,7 +734,7 @@
 
   .order-form__fieldset--textarea {
     padding-top: 0;
-    padding-bottom: 42px;
+    padding-bottom: 44px;
   }
 
   .order-form__checkbox:checked + label::after {
@@ -731,13 +744,17 @@
 
   .order-form__textarea {
     width: 700px;
-    height: 140px;
+    height: 142px;
     font-size: 19px;
     padding-top: 13px;
   }
 
   .order-form__legend--add {
     padding-top: 17px;
+  }
+
+  .order-form__input-contacts-content {
+    width: 877px;
   }
 
   .order-form__legend--color {
